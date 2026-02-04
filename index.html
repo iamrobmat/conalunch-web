@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CoNaLunch - lunch mapa</title>
+    <meta name="description" content="Lunchowe menu restauracji: Bialystok i Wroclaw" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-a"></div>
+    <div class="bg-orb orb-b"></div>
+
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">CoNaLunch</p>
+        <h1>Lunch na dzisiaj</h1>
+      </div>
+      <div class="meta" id="metaInfo">Ladowanie...</div>
+    </header>
+
+    <main class="shell">
+      <section class="controls">
+        <label class="control">
+          <span>Miasto</span>
+          <select id="citySelect"></select>
+        </label>
+
+        <div class="control day-control">
+          <span>Dzien</span>
+          <div class="day-switch">
+            <button id="prevDay" class="icon-btn" type="button" aria-label="Poprzedni dzien">&larr;</button>
+            <div id="dayChips" class="chips"></div>
+            <button id="nextDay" class="icon-btn" type="button" aria-label="Nastepny dzien">&rarr;</button>
+          </div>
+        </div>
+
+        <div class="control">
+          <span>Widok</span>
+          <div class="segmented" id="scopeSwitch">
+            <button type="button" data-scope="all" class="is-active">Wszystkie</button>
+            <button type="button" data-scope="today">Z menu dnia</button>
+            <button type="button" data-scope="week">Z menu tyg.</button>
+          </div>
+        </div>
+      </section>
+
+      <p class="weekend-note" id="weekendNote" hidden>Weekend - domyslnie pokazuje piatek.</p>
+      <section class="kpis" id="kpiBar"></section>
+
+      <div class="mobile-panes" id="mobilePanes">
+        <button class="is-active" data-pane="list" type="button">Lista</button>
+        <button data-pane="map" type="button">Mapa</button>
+      </div>
+
+      <section class="layout">
+        <div class="pane pane-list is-visible" id="listPane">
+          <div class="cards" id="cards"></div>
+        </div>
+
+        <div class="pane pane-map" id="mapPane">
+          <div id="map"></div>
+          <p class="map-note">Kolory markerow: zielony = ma lunch w wybranym dniu, pomaranczowy = ma lunch w tygodniu, szary = brak lunchu w tygodniu.</p>
+        </div>
+      </section>
+    </main>
+
+    <template id="emptyStateTpl">
+      <article class="empty-state">
+        <h2>Brak restauracji dla tego filtra</h2>
+        <p>Zmien dzien lub filtr, aby zobaczyc wiecej wynikow.</p>
+      </article>
+    </template>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
