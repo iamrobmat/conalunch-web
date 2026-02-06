@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CoNaLunch - lunch mapa</title>
+    <meta name="description" content="Lunchowe menu restauracji: Bialystok i Wroclaw" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-left">
+        <span class="logo">CoNaLunch</span>
+        <span class="topbar-sep"></span>
+        <span class="meta" id="metaInfo">Ladowanie...</span>
+      </div>
+      <div class="topbar-right">
+        <div id="cityDropdown" class="city-dropdown">
+          <button type="button" id="cityDropdownBtn" class="city-dropdown-btn">
+            <img id="cityIcon" class="city-icon" src="" alt="">
+            <span id="cityLabel">Ładowanie...</span>
+            <svg class="city-dropdown-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div id="cityDropdownMenu" class="city-dropdown-menu" hidden></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="shell">
+      <section class="controls">
+        <div class="day-switch">
+          <button id="prevDay" class="nav-btn" type="button" aria-label="Poprzedni dzien">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <div id="dayChips" class="chips"></div>
+          <button id="nextDay" class="nav-btn" type="button" aria-label="Nastepny dzien">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </section>
+
+      <p class="weekend-note" id="weekendNote" hidden>Weekend — pokazujemy menu z piatku.</p>
+
+      <div class="mobile-panes" id="mobilePanes">
+        <button class="is-active" data-pane="list" type="button">Lista</button>
+        <button data-pane="map" type="button">Mapa</button>
+      </div>
+
+      <section class="layout">
+        <div class="pane pane-list is-visible" id="listPane">
+          <div class="cards" id="cards"></div>
+        </div>
+
+        <div class="pane pane-map" id="mapPane">
+          <div id="map"></div>
+          <p class="map-note">
+            <span class="map-dot map-dot--green"></span> lunch dnia
+            <span class="map-dot map-dot--orange"></span> lunch tygodnia
+            <span class="map-dot map-dot--gray"></span> brak lunchu
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <template id="emptyStateTpl">
+      <article class="empty-state">
+        <h2>Brak restauracji</h2>
+        <p>Zmien dzien, aby zobaczyc wiecej wynikow.</p>
+      </article>
+    </template>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1908 @@
+{
+  "meta": {
+    "generatedAt": "2026-02-06T13:46:26.156Z",
+    "week": 4,
+    "year": 2026,
+    "cityFilter": null,
+    "includeInactive": false,
+    "restaurants": 35,
+    "menus": 24
+  },
+  "cities": [
+    "Białystok",
+    "Wrocław"
+  ],
+  "restaurants": [
+    {
+      "id": "barcristal",
+      "name": "Bar Cristal",
+      "city": "Białystok",
+      "address": "Lipowa 3/5",
+      "phone": "85 749 61 59",
+      "facebookUrl": "https://www.facebook.com/restauracjacristalbialystok/",
+      "isActive": true,
+      "lat": 53.1322924,
+      "lng": 23.1557737,
+      "menus": {
+        "monday": {
+          "lunch": [
+            "📅 grudnia 5 (poniedziałek)"
+          ],
+          "soup": null,
+          "price": 29,
+          "hasMenu": true
+        },
+        "tuesday": {
+          "lunch": [
+            "🎆 Sylwester 5 w Hotelu Cristal - elegancja, smak i muzyka w centrum Białegostoku",
+            "Końcówka roku to idealny moment, aby podziękować bliskim, współpracownikom i partnerom za wspólny czas.",
+            "W Hotelu Cristal przygotowaliśmy kameralny, uroczysty wieczór sylwestrowy, który łączy wykwintne smaki z muzyką na żywo i elegancką atmosferą czterogwiazdkowego hotelu."
+          ],
+          "soup": "🍽️ Kolacja serwowana (+ popisowe danie główne Szefowej Kuchni)",
+          "price": null,
+          "hasMenu": true
+        },
+        "wednesday": {
+          "lunch": [
+            "📅 grudnia 5 (środa)",
+            "W tych terminach restauracja nie będzie przyjmowała Gości.",
+            "Pozostałe dni działamy w standardowych godzinach otwarcia i serdecznie zapraszamy na lunch, kolację i spotkania przy dobrej kuchni. 🍽️✨"
+          ],
+          "soup": null,
+          "price": 31,
+          "hasMenu": true
+        },
+        "thursday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "friday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        }
+      },
+      "status": {
+        "hasAnyLunch": true,
+        "isComplete": false
+      }
+    },
+    {
+      "id": "biesiadna",
+      "name": "Biesiadna",
+      "city": "Białystok",
+      "address": "Magnoliowa 14",
+      "phone": "85 661 38 99",
+      "facebookUrl": "https://www.facebook.com/biesiadnabialystok/",
+      "isActive": true,
+      "lat": 53.119322,
+      "lng": 23.0944506,
+      "menus": {
+        "monday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "tuesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "wednesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "thursday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "friday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        }
+      },
+      "status": {
+        "hasAnyLunch": false,
+        "isComplete": false
+      }
+    },
+    {
+      "id": "bistrofabr",
+      "name": "Bistro Fabryczna",
+      "city": "Białystok",
+      "address": "Fabryczna 4",
+      "phone": "533 941 399",
+      "facebookUrl": "https://www.facebook.com/fabryczna4bistro/",
+      "isActive": true,
+      "lat": 53.1374912,
+      "lng": 23.1648545,
+      "menus": {
+        "monday": {
+          "lunch": [],
+          "soup": "May be an image of text that says 'FAGRYCZNA POMIDOROWA FABRYCZNY PONIEDZIAŁEK każdy lunch ·RULONIK DROBIOWY z PIECZARKAMI I MOZARELLĄ w SOSIE ŚMIETANOWYM, ZIEMNIAKI SURÓWKA FABRYCZNA KARKÓWKA w KREMOWYM SOSIE PAPRYKOWYM KASZA GRYCZANA, SURÓWKA .\"SCHABOWY",
+          "price": 26,
+          "hasMenu": false
+        },
+        "tuesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "wednesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "thursday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "friday": {
+          "lunch": [
+            "May be an image of text that says 'F FABR FABRYC C Pomysł na lunch Babka ziemniaczana z sosem pieczarkowymi i surówką iは ul. Fabryczna 4 tel. tel.FABRYCZNA Bistro'",
+            "FILET z KURCZAKA w SOSIE ZE SZPINAKIEM I POMIDORAMI SUSZONYMI ZIEMNIAKI SURÓWKA BABKA ZIEMNIACZANA z SOSEM PIECZARKOWYM SURÓWKA SCHABOWY DROBIOWY ZIEMNIAKI SURÓWKA WIEPRZOWY BURGERY Kurczak Rybka Smash, Schabowy Szarpany ,Halloumi ul. Fabryczna tel. FABRY"
+          ],
+          "soup": "May be an image of text that says 'każdy lunch zł FABRYCZNY PIATEK BROKUŁOWA RYBA w SOSIE ŚMIETANOWO- KOPERKOWYM ZIEMNIAKI SURÓWKA",
+          "price": 26,
+          "hasMenu": true
+        }
+      },
+      "status": {
+        "hasAnyLunch": true,
+        "isComplete": false
+      }
+    },
+    {
+      "id": "browarstar",
+      "name": "Browar Stary Rynek",
+      "city": "Białystok",
+      "address": "Rynek Kościuszki 11",
+      "phone": "85 831 18 01",
+      "facebookUrl": "https://www.facebook.com/BrowarStaryRynek/",
+      "isActive": true,
+      "lat": 53.1318793,
+      "lng": 23.1590777,
+      "menus": {
+        "monday": {
+          "lunch": [
+            "Nowy tydzień, nowy lunch w Browarze Stary Rynek 🍽️",
+            "Jak zawsze stawiamy na różnorodność i konkretne smaki.",
+            "Zupy:"
+          ],
+          "soup": "tajska z kurczakiem",
+          "price": 12,
+          "hasMenu": true
+        },
+        "tuesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "wednesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "thursday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "friday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        }
+      },
+      "status": {
+        "hasAnyLunch": true,
+        "isComplete": false
+      }
+    },
+    {
+      "id": "damascus",
+      "name": "Damascus",
+      "city": "Białystok",
+      "address": "Waszyngtona 26/U1A",
+      "phone": "730 286 097",
+      "facebookUrl": "https://www.facebook.com/damascusbialystok/",
+      "isActive": true,
+      "lat": 53.1252649,
+      "lng": 23.1535364,
+      "menus": {
+        "monday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "tuesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "wednesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "thursday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "friday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        }
+      },
+      "status": {
+        "hasAnyLunch": false,
+        "isComplete": false
+      }
+    },
+    {
+      "id": "enklawa",
+      "name": "Enklawa",
+      "city": "Białystok",
+      "address": "Rynek Kościuszki 26A",
+      "phone": "664 695 075",
+      "facebookUrl": "https://www.facebook.com/restauracjaenklawa/",
+      "isActive": true,
+      "lat": 53.1327982,
+      "lng": 23.1581421,
+      "menus": {
+        "monday": {
+          "lunch": [
+            "🍲🍝 :– :(lub do wyczerpania), pn.–pt. 🌟",
+            "Zrób sobie przerwę w pracy i wpadnij na chwilę relaksu — idealny sposób, by nabrać energii na resztę dnia. 🚶‍♀️☕️",
+            "🥬 PONIEDZIAŁEK: Krem z zielonych warzyw"
+          ],
+          "soup": "🥬 PONIEDZIAŁEK: zacierkowa",
+          "price": 11,
+          "hasMenu": true
+        },
+        "tuesday": {
+          "lunch": [
+            "1. Spaghetti w sosie Bolognese posypane parmezanem",
+            "2. Spaghetti Aglio e Olio posypane parmezanem",
+            "🥩 WTOREK: Krem z selera i pora"
+          ],
+          "soup": "🍄 WTOREK: pieczarkowa",
+          "price": 75,
+          "hasMenu": true
+        },
+        "wednesday": {
+          "lunch": [
+            "1. Cordon Blue, podany z puree ziemniaczanym i marchewką z porem",
+            "2. Medaliony z kalafiora podane z puree ziemniaczanym i marchewką z porem",
+            "🫛 ŚRODA: Barszcz czerwony"
+          ],
+          "soup": "🫛 ŚRODA: z soczewicy",
+          "price": null,
+          "hasMenu": true
+        },
+        "thursday": {
+          "lunch": [
+            "🎃 CZWARTEK: Krem z dyni z nutą pomarańczy",
+            "1. Żeberka BBQ, podane z ziemniakami opiekanymi i surówką z kiszonego ogórka",
+            "2. Chrupiące tofu w sosie słodko-kwaśnym na warzywnym tagliatelle"
+          ],
+          "soup": "🌽 CZWARTEK: Kremowa cebulowa z grzanką parmezanową",
+          "price": null,
+          "hasMenu": true
+        },
+        "friday": {
+          "lunch": [
+            "1. Ryba panierowana podane z puree ziemniaczanym i surówką z kapusty kiszonej",
+            "2. Pieczarki faszerowane podane z puree ziemniaczanym i surówką z kapusty kiszonej",
+            "📌 Przyjdź i zjedz na miejscu"
+          ],
+          "soup": "🍀 PIĄTEK: szczawiowa z jajkiem",
+          "price": 75,
+          "hasMenu": true
+        }
+      },
+      "status": {
+        "hasAnyLunch": true,
+        "isComplete": true
+      }
+    },
+    {
+      "id": "jakumamy",
+      "name": "Jak u Mamy",
+      "city": "Białystok",
+      "address": "Zagumienna 10C",
+      "phone": "574 029 597",
+      "facebookUrl": "https://www.facebook.com/jakumamybialystok/",
+      "isActive": true,
+      "lat": 53.146863,
+      "lng": 23.1497331,
+      "menus": {
+        "monday": {
+          "lunch": [
+            "🥗Sałatka🥗",
+            "z 🐔 kurczakiem i 🍟frytkami",
+            "jak u mamy z fetą, suszonymi🍅 pomidorami i 🍞tostami"
+          ],
+          "soup": "🍽️Zestaw dnia🍱 : Karkówka po cygańsku 🥔ziemniaki/kasza/ryż + surówka +🍲",
+          "price": 24.99,
+          "hasMenu": true
+        },
+        "tuesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "wednesday": {
+          "lunch": [
+            "🥗Sałatka🥗",
+            "z 🐔 kurczakiem i 🍟frytkami",
+            "jak u mamy z fetą, suszonymi🍅 pomidorami i 🍞tostami"
+          ],
+          "soup": "🍽️Zestaw dnia🍱 Bitki wieprzowe w sosie pieczeniowym 🥔ziemniaki/kasza/ryż + surówka +🍲",
+          "price": 24.99,
+          "hasMenu": true
+        },
+        "thursday": {
+          "lunch": [
+            "🥗Sałatka🥗",
+            "z 🐔 kurczakiem i 🍟frytkami",
+            "jak u mamy z fetą, suszonymi🍅 pomidorami i 🍞tostami"
+          ],
+          "soup": "🍽️Zestaw dnia🍱 Kotlet pożarski 🥔ziemniaki/kasza/ryż + surówka +🍲",
+          "price": 24.99,
+          "hasMenu": true
+        },
+        "friday": {
+          "lunch": [
+            "🥗Sałatka🥗",
+            "z 🐔 kurczakiem i 🍟frytkami",
+            "jak u mamy z fetą, suszonymi🍅 pomidorami i 🍞tostami"
+          ],
+          "soup": "🍽️Zestaw dnia🍱 : Karkówka w sosie barbecue 🥔ziemniaki/kasza/ryż + surówka +🍲",
+          "price": 24.99,
+          "hasMenu": true
+        }
+      },
+      "status": {
+        "hasAnyLunch": true,
+        "isComplete": false
+      }
+    },
+    {
+      "id": "kawelin",
+      "name": "Kawelin",
+      "city": "Białystok",
+      "address": "Legionowa 10",
+      "phone": "85 740 99 02",
+      "facebookUrl": "https://www.facebook.com/RestauracjaKawelin/",
+      "isActive": true,
+      "lat": 53.1308866,
+      "lng": 23.1594196,
+      "menus": {
+        "monday": {
+          "lunch": [
+            "🍽 PONIEDZIAŁEK",
+            "Panierowana pierś z kurczaka / purée ziemniaczane / marchew z porem",
+            "Krem z pomidorów"
+          ],
+          "soup": "jarzynowa",
+          "price": null,
+          "hasMenu": true
+        },
+        "tuesday": {
+          "lunch": [
+            "🍽 WTOREK",
+            "Grochówka z boczkiem wędzonym",
+            "Karkówka / sos pieczeniowy / kluski śląskie / surówka z buraków"
+          ],
+          "soup": "kalafiorowa z koperkiem",
+          "price": null,
+          "hasMenu": true
+        },
+        "wednesday": {
+          "lunch": [
+            "🍽 ŚRODA",
+            "Tom Kha",
+            "Schab w panko / ryż / warzywa słodko-kwaśne"
+          ],
+          "soup": null,
+          "price": null,
+          "hasMenu": true
+        },
+        "thursday": {
+          "lunch": [
+            "🍽 CZWARTEK",
+            "Krem z ziemniaków i pora",
+            "Tagliatelle ze szpinakiem / kurczak / suszone pomidory"
+          ],
+          "soup": "grzybowa",
+          "price": null,
+          "hasMenu": true
+        },
+        "friday": {
+          "lunch": [
+            "🍽 PIĄTEK",
+            "Kapuśniak",
+            "Dorsz w winie / purée ziemniaczane / dziki brokuł"
+          ],
+          "soup": "+Daniegłówne",
+          "price": 10,
+          "hasMenu": true
+        }
+      },
+      "status": {
+        "hasAnyLunch": true,
+        "isComplete": true
+      }
+    },
+    {
+      "id": "panschabow",
+      "name": "Pan Schabowy",
+      "city": "Białystok",
+      "address": "Kołłątaja 67/1",
+      "phone": "730 199 000",
+      "facebookUrl": "https://www.facebook.com/PanSchab/",
+      "isActive": true,
+      "lat": 53.1548773,
+      "lng": 23.0874105,
+      "menus": {
+        "monday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "tuesday": {
+          "lunch": [
+            "Dzień dobry Kochani ❣️",
+            "Jarzynowa , żurek, rosół,pomidorowa , barszcz czerwony",
+            "Flaczki z pieczywem"
+          ],
+          "soup": "dnia",
+          "price": 20,
+          "hasMenu": true
+        },
+        "wednesday": {
+          "lunch": [
+            "Dzień dobry Kochani ❣️",
+            "Tak jak pisałam 😉",
+            "Jarzynowa, szczawiowa z jajem 🥚🥚🥚"
+          ],
+          "soup": "dnia",
+          "price": 34,
+          "hasMenu": true
+        },
+        "thursday": {
+          "lunch": [
+            "Dzień dobry Kochani ❣️",
+            "To będzie \" pyszny dzień\"",
+            "Bo, specjalistka od kartaczy- Ania ,uwija się od rana 😎"
+          ],
+          "soup": "dnia",
+          "price": 34,
+          "hasMenu": true
+        },
+        "friday": {
+          "lunch": [
+            "Dzień dobry Kochani ❣️",
+            "Kalafiorowa, kapuśniak, rosół, pomidorowa",
+            "Ryba miruna smażona, ziemniaki/ryż,"
+          ],
+          "soup": "dnia",
+          "price": 33,
+          "hasMenu": true
+        }
+      },
+      "status": {
+        "hasAnyLunch": true,
+        "isComplete": false
+      }
+    },
+    {
+      "id": "pawilontow",
+      "name": "Pawilon Towarzyski",
+      "city": "Białystok",
+      "address": "Akademicka 30",
+      "phone": "664 464 777",
+      "facebookUrl": "https://www.facebook.com/pawilontowarzyski/",
+      "isActive": true,
+      "lat": 53.1268211,
+      "lng": 23.1635335,
+      "menus": {
+        "monday": {
+          "lunch": [
+            "Niech poniedziałek kojarzy Wam się z czymś przyjemnym – na przykład z lunchem, na który warto czekać. Od dziś serwujemy nową kartę lunchową, w której znajdziecie zarówno azjatyckie akcenty, jak i genialną klasykę w nowoczesnym wydaniu.",
+            "Co dziś wybierzesz? 🥢",
+            "Przystawki (): Chrupiące Gyozy wieprzowe, krewetki w panko z salsą mango-chili lub faszerowane portobello."
+          ],
+          "soup": "ogórkowa – przygotowana na wędzonce, podawana z ziemniakami i koperkiem.",
+          "price": 19,
+          "hasMenu": true
+        },
+        "tuesday": {
+          "lunch": [
+            "Gotowi na kulinarną podróż dookoła świata? 🌍🍽️",
+            "W tym tygodniu w Pawilonie nie znamy granic!",
+            "Nasz Szef Kuchni przygotował dla Was menu lunchowe, które zabierze Was w najdalsze zakątki globu – bez paszportu i bez wychodzenia z Białegostoku."
+          ],
+          "soup": "🇵🇱 Polska: Zaczynamy od klasyki – ogórkowa na wędzonce oraz soczysty kotlet mielony z puree i groszkiem. 🇯🇵 Azja: Chrupiące kalmary z chili i cytrynowym aioli.",
+          "price": 47,
+          "hasMenu": true
+        },
+        "wednesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "thursday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "friday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        }
+      },
+      "status": {
+        "hasAnyLunch": true,
+        "isComplete": false
+      }
+    },
+    {
+      "id": "ququłkaibi",
+      "name": "QuQułka (Ibis Styles)",
+      "city": "Białystok",
+      "address": "Aleja Piłsudskiego 25",
+      "phone": "85 877 25 00",
+      "facebookUrl": "https://www.facebook.com/QuQulkaRestaurant/",
+      "isActive": true,
+      "lat": 53.136463,
+      "lng": 23.1618111,
+      "menus": {
+        "monday": {
+          "lunch": [
+            "Nowy tydzień witamy ze smakiem w QuQułce. 🙂",
+            "Zapraszamy na lunch. 🍽️😃",
+            "🏠Aleja Piłsudskiego , Białystok"
+          ],
+          "soup": null,
+          "price": 25,
+          "hasMenu": true
+        },
+        "tuesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "wednesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "thursday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "friday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        }
+      },
+      "status": {
+        "hasAnyLunch": true,
+        "isComplete": false
+      }
+    },
+    {
+      "id": "rajpizzalu",
+      "name": "RAJ Pizza Ludzie Wino",
+      "city": "Białystok",
+      "address": "Kilińskiego 13",
+      "phone": "500 751 511",
+      "facebookUrl": "https://www.facebook.com/raj.pizzaludziewino/",
+      "isActive": true,
+      "lat": 53.1321819,
+      "lng": 23.1653593,
+      "menus": {
+        "monday": {
+          "lunch": [
+            "Nowy tydzień nowy lunch! Rozgrzej się w naszym przestronnym Raju w towarzystwie pysznej zimowej herbaty 🔥🌴",
+            "zupa krem z batatów z masłem orzechowym i chipsami z topinamburu",
+            "🌱DANIE WEGAŃSKIE"
+          ],
+          "soup": "🌱WEGAŃSKA",
+          "price": 12,
+          "hasMenu": true
+        },
+        "tuesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "wednesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "thursday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "friday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        }
+      },
+      "status": {
+        "hasAnyLunch": true,
+        "isComplete": false
+      }
+    },
+    {
+      "id": "ramnbase",
+      "name": "RAM'N'BASE",
+      "city": "Białystok",
+      "address": "Sienkiewicza 26/1u",
+      "phone": "720 756 105",
+      "facebookUrl": "https://www.facebook.com/ramnbase/",
+      "isActive": true,
+      "lat": 53.1343419,
+      "lng": 23.1635957,
+      "menus": {
+        "monday": {
+          "lunch": [
+            "Truffle Shoyu Ramen"
+          ],
+          "soup": null,
+          "price": 36,
+          "hasMenu": true
+        },
+        "tuesday": {
+          "lunch": [
+            "Truffle Shoyu Ramen"
+          ],
+          "soup": null,
+          "price": 36,
+          "hasMenu": true
+        },
+        "wednesday": {
+          "lunch": [
+            "Truffle Shoyu Ramen"
+          ],
+          "soup": null,
+          "price": 36,
+          "hasMenu": true
+        },
+        "thursday": {
+          "lunch": [
+            "Truffle Shoyu Ramen"
+          ],
+          "soup": null,
+          "price": 36,
+          "hasMenu": true
+        },
+        "friday": {
+          "lunch": [
+            "Truffle Shoyu Ramen"
+          ],
+          "soup": null,
+          "price": 36,
+          "hasMenu": true
+        }
+      },
+      "status": {
+        "hasAnyLunch": true,
+        "isComplete": true
+      }
+    },
+    {
+      "id": "ratuszowy",
+      "name": "Ratuszowy",
+      "city": "Białystok",
+      "address": "Lipowa 1",
+      "phone": "601 583 020",
+      "facebookUrl": "https://www.facebook.com/ratuszowyrest/",
+      "isActive": true,
+      "lat": 53.1325152,
+      "lng": 23.1570881,
+      "menus": {
+        "monday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "tuesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "wednesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "thursday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "friday": {
+          "lunch": [
+            "Roladka z dorsza ze szpinakiem i grzybami"
+          ],
+          "soup": "Krem z białych warzyw",
+          "price": 32,
+          "hasMenu": true
+        }
+      },
+      "status": {
+        "hasAnyLunch": true,
+        "isComplete": false
+      }
+    },
+    {
+      "id": "szklankiit",
+      "name": "Szklanki i Talerze",
+      "city": "Białystok",
+      "address": "Rynek Kościuszki 32",
+      "phone": "531 697 018",
+      "facebookUrl": "https://www.facebook.com/szklankiitalerze/",
+      "isActive": true,
+      "lat": 53.1328382,
+      "lng": 23.157662,
+      "menus": {
+        "monday": {
+          "lunch": [
+            "BLUE MONDAY? Nie z nami! Wpadnij na lunch, zróbmy z tego poniedziałku coś pysznego!😎🥳",
+            "Caldo verde z chorizo i jarmużem",
+            "🍽️Danie główne:"
+          ],
+          "soup": "🥣",
+          "price": 12,
+          "hasMenu": true
+        },
+        "tuesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "wednesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "thursday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "friday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        }
+      },
+      "status": {
+        "hasAnyLunch": true,
+        "isComplete": false
+      }
+    },
+    {
+      "id": "żubrowisko",
+      "name": "Żubrowisko",
+      "city": "Białystok",
+      "address": "Rynek Kościuszki 10",
+      "phone": "85 742 60 31",
+      "facebookUrl": "https://www.instagram.com/restauracjazubrowisko/",
+      "isActive": true,
+      "lat": 53.1323898,
+      "lng": 23.1587714,
+      "menus": {
+        "monday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "tuesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "wednesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "thursday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "friday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        }
+      },
+      "status": {
+        "hasAnyLunch": false,
+        "isComplete": false
+      }
+    },
+    {
+      "id": "lindleya14",
+      "name": "Bar Mleczny Lindleya",
+      "city": "Wrocław",
+      "address": "Lindleya 14",
+      "phone": "884 280 872",
+      "facebookUrl": "https://www.facebook.com/barmlecznylindleya14/",
+      "isActive": true,
+      "lat": 51.111917,
+      "lng": 17.0532756,
+      "menus": {
+        "monday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "tuesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "wednesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "thursday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "friday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        }
+      },
+      "status": {
+        "hasAnyLunch": false,
+        "isComplete": false
+      }
+    },
+    {
+      "id": "czarymary",
+      "name": "Czarymary Restauracja",
+      "city": "Wrocław",
+      "address": "plac Konstytucji 3 Maja 3",
+      "phone": "71 733 48 20",
+      "facebookUrl": "https://www.facebook.com/czarymaryrestauracja/",
+      "isActive": true,
+      "lat": 51.0994848,
+      "lng": 17.0401578,
+      "menus": {
+        "monday": {
+          "lunch": [
+            "🍖Grillowana karkówka, pieczone ziemniaki i sałatka",
+            "🍅Gnocchi faszerowane pomidorami, mozzarellą, bazylią i sosem serowym",
+            "Zapraszamy!📍Plac Konstytycji 3 Maja 3"
+          ],
+          "soup": "🍲Hiszpańska z chorizo i mięsem mielonym",
+          "price": 12,
+          "hasMenu": true
+        },
+        "tuesday": {
+          "lunch": [
+            "Lunch dnia WTOREK 💚",
+            "Curry bowl z warzywami",
+            "lub"
+          ],
+          "soup": "Tajska z mleczkiem kokosowym",
+          "price": null,
+          "hasMenu": true
+        },
+        "wednesday": {
+          "lunch": [
+            "Lunch dnia ŚRODA 💚",
+            "🫕 Krem pomidorowy z grzankami",
+            "🥘 Polędwiczka wieprzowa z kluskami śląskim i buraczkami"
+          ],
+          "soup": null,
+          "price": null,
+          "hasMenu": true
+        },
+        "thursday": {
+          "lunch": [
+            "Lunch dnia CZWARTEK 😍",
+            "Krem z dyni",
+            "Sznycel z indyka z musem z kalafiora i sezonowymi warzywami"
+          ],
+          "soup": null,
+          "price": null,
+          "hasMenu": true
+        },
+        "friday": {
+          "lunch": [
+            "Lunch dnia PIĄTEK 💚",
+            "Fish burger z frytkami i sosem tatarskim",
+            "Makaron ryżowy na styl orientalny"
+          ],
+          "soup": "z soczewicy z cukinią i papryką",
+          "price": null,
+          "hasMenu": true
+        }
+      },
+      "status": {
+        "hasAnyLunch": true,
+        "isComplete": true
+      }
+    },
+    {
+      "id": "denekst",
+      "name": "deNekst",
+      "city": "Wrocław",
+      "address": "Powstańców Śląskich 15-17",
+      "phone": null,
+      "facebookUrl": "https://www.facebook.com/p/deNekst-61576915193056/",
+      "isActive": true,
+      "lat": 51.095787,
+      "lng": 17.0218087,
+      "menus": {
+        "monday": {
+          "lunch": [
+            "Lunch menu poniedziałek .6",
+            "🫕 ZUPY:",
+            "Krem pomidorowy z mozzarellą i pesto"
+          ],
+          "soup": "🫕 DNIA:",
+          "price": 19.01,
+          "hasMenu": true
+        },
+        "tuesday": {
+          "lunch": [
+            "Lunch menu wtorek .6",
+            "🫕 ZUPY:",
+            "Krem pomidorowy z mozzarellą i pesto"
+          ],
+          "soup": "🫕 DNIA:",
+          "price": 13.01,
+          "hasMenu": true
+        },
+        "wednesday": {
+          "lunch": [
+            "Lunch menu środa .6",
+            "🫕 ZUPY:",
+            "Krem pomidorowy z mozzarellą i pesto"
+          ],
+          "soup": "🫕 DNIA:",
+          "price": 14.01,
+          "hasMenu": true
+        },
+        "thursday": {
+          "lunch": [
+            "Lunch menu czwartek .6",
+            "🫕 ZUPY:",
+            "Krem pomidorowy z mozzarellą i pesto"
+          ],
+          "soup": "🫕 DNIA:",
+          "price": 15.01,
+          "hasMenu": true
+        },
+        "friday": {
+          "lunch": [
+            "Lunch menu piątek .6",
+            "🫕 ZUPY:",
+            "Krem pomidorowy z mozzarellą i pesto"
+          ],
+          "soup": "🫕 DNIA:",
+          "price": 16.01,
+          "hasMenu": true
+        }
+      },
+      "status": {
+        "hasAnyLunch": true,
+        "isComplete": true
+      }
+    },
+    {
+      "id": "drevnykoc",
+      "name": "Dřevný Kocůr OVO",
+      "city": "Wrocław",
+      "address": "Podwale 83",
+      "phone": "515 333 023",
+      "facebookUrl": "https://www.facebook.com/DrevnyKocurWroclaw/",
+      "isActive": true,
+      "lat": 51.1076131,
+      "lng": 17.0428759,
+      "menus": {
+        "monday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "tuesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "wednesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "thursday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "friday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        }
+      },
+      "status": {
+        "hasAnyLunch": false,
+        "isComplete": false
+      }
+    },
+    {
+      "id": "elgordito",
+      "name": "El Gordito",
+      "city": "Wrocław",
+      "address": "pl. Orląt Lwowskich 20B",
+      "phone": "605 464 458",
+      "facebookUrl": "https://www.facebook.com/elgorditowroclaw/",
+      "isActive": true,
+      "lat": 51.1082886,
+      "lng": 17.0197698,
+      "menus": {
+        "monday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "tuesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "wednesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "thursday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "friday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        }
+      },
+      "status": {
+        "hasAnyLunch": false,
+        "isComplete": false
+      }
+    },
+    {
+      "id": "element4",
+      "name": "Element 4",
+      "city": "Wrocław",
+      "address": "Powstańców Śląskich 9",
+      "phone": "575 244 944",
+      "facebookUrl": "https://www.facebook.com/Element4Wroclaw/",
+      "isActive": true,
+      "lat": 51.0973232,
+      "lng": 17.0240703,
+      "menus": {
+        "monday": {
+          "lunch": [
+            "Lunch menu poniedziałek .6",
+            "🫕 ZUPY:",
+            "Krem pomidorowy z mozzarellą i pesto"
+          ],
+          "soup": "🫕 DNIA:",
+          "price": 19.01,
+          "hasMenu": true
+        },
+        "tuesday": {
+          "lunch": [
+            "Lunch menu wtorek .6",
+            "🫕 ZUPY:",
+            "Krem pomidorowy z mozzarellą i pesto"
+          ],
+          "soup": "🫕 DNIA:",
+          "price": 13.01,
+          "hasMenu": true
+        },
+        "wednesday": {
+          "lunch": [
+            "Lunch menu Środa .6",
+            "🫕 ZUPY:",
+            "Krem pomidorowy z mozzarellą i pesto"
+          ],
+          "soup": "🫕 DNIA:",
+          "price": 14.01,
+          "hasMenu": true
+        },
+        "thursday": {
+          "lunch": [
+            "Lunch menu czwartek .6",
+            "🫕 ZUPY:",
+            "Krem pomidorowy z mozzarellą i pesto"
+          ],
+          "soup": "🫕 DNIA:",
+          "price": 15.01,
+          "hasMenu": true
+        },
+        "friday": {
+          "lunch": [
+            "Lunch menu piątek .6",
+            "🫕 ZUPY:",
+            "Krem pomidorowy z mozzarellą i pesto"
+          ],
+          "soup": "🫕 DNIA:",
+          "price": 16.01,
+          "hasMenu": true
+        }
+      },
+      "status": {
+        "hasAnyLunch": true,
+        "isComplete": true
+      }
+    },
+    {
+      "id": "folgujemy",
+      "name": "Folgujemy",
+      "city": "Wrocław",
+      "address": "Kniaziewicza 16",
+      "phone": "537 552 023",
+      "facebookUrl": "https://www.facebook.com/folgujemy/",
+      "isActive": true,
+      "lat": 51.1018885,
+      "lng": 17.0423791,
+      "menus": {
+        "monday": {
+          "lunch": [],
+          "soup": "May be an image of text that says 'Lunch MENU PONIEDZIAŁEK-PIĄTEK -/zestawic ŚRODA pomidorowa/ MIĘSNY KETO/TYGODNIA ORZECHOWE/ jajoczny graszkiem PORZECZKA/ ziemmaczane/ marchewkaz miclony LEMONIADĘ, puret ziemniaczane KETO domowy melony punee dyniowe PON",
+          "price": 19,
+          "hasMenu": false
+        },
+        "tuesday": {
+          "lunch": [
+            "May be an image of text May be an image of poached egg and chicken sandwich May be an image of poached egg May be an image of croquette May be an image of pasta"
+          ],
+          "soup": "Rozpiska lunchowa na ten tydzień - żeby każdy miał pod ręką. 😇 zapraszamy na codziennie inny lunch wege, mięsny i keto. W zestawie z zupą lub solo. ☺️",
+          "price": null,
+          "hasMenu": true
+        },
+        "wednesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "thursday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "friday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        }
+      },
+      "status": {
+        "hasAnyLunch": true,
+        "isComplete": false
+      }
+    },
+    {
+      "id": "idakuchnia",
+      "name": "IDA Kuchnia i Wino",
+      "city": "Wrocław",
+      "address": "Łazienna 4",
+      "phone": "608 728 260",
+      "facebookUrl": "https://www.facebook.com/idarestauracja/",
+      "isActive": true,
+      "lat": 51.1124135,
+      "lng": 17.0293523,
+      "menus": {
+        "monday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "tuesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "wednesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "thursday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "friday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        }
+      },
+      "status": {
+        "hasAnyLunch": false,
+        "isComplete": false
+      }
+    },
+    {
+      "id": "maminesmak",
+      "name": "Mamine Smaki",
+      "city": "Wrocław",
+      "address": "Pomorska 27",
+      "phone": "603 387 656",
+      "facebookUrl": "https://www.facebook.com/Maminesmaki/",
+      "isActive": true,
+      "lat": 51.1188079,
+      "lng": 17.0318534,
+      "menus": {
+        "monday": {
+          "lunch": [
+            "MAMINE SMAKI zapraszają na dzisiejszy zestaw dnia 🥰",
+            "👉DANIE DNIA-filet z kurczaka zapiekany z pieczarkami i serem-.",
+            "W zestawie kupisz taniej-🥳🥳🥳"
+          ],
+          "soup": "👉DNIA-rosół - 🥣😋",
+          "price": 34,
+          "hasMenu": true
+        },
+        "tuesday": {
+          "lunch": [
+            "MAMINE SMAKI zapraszają na dzisiejszy zestaw dnia 🥰",
+            "👉DANIE DNIA-schab z masłem czosnkowym -.",
+            "W zestawie kupisz taniej-🥳🥳🥳"
+          ],
+          "soup": "👉DNIA-grochówka - 🥣😋",
+          "price": 34,
+          "hasMenu": true
+        },
+        "wednesday": {
+          "lunch": [
+            "MAMINE SMAKI zapraszają na dzisiejszy zestaw dnia 🥰",
+            "👉DANIE DNIA-filet z kurczaka w słoneczniku -.",
+            "W zestawie kupisz taniej-🥳🥳🥳"
+          ],
+          "soup": "👉DNIA-krupnik - 🥣😋",
+          "price": 34,
+          "hasMenu": true
+        },
+        "thursday": {
+          "lunch": [
+            "MAMINE SMAKI zapraszają na dzisiejszy zestaw dnia 🥰",
+            "👉DANIE DNIA-filet z kurczaka po parysku -.",
+            "W zestawie kupisz taniej-🥳🥳🥳"
+          ],
+          "soup": "👉DNIA-pomidorowa z ryżem - 🥣😋",
+          "price": 34,
+          "hasMenu": true
+        },
+        "friday": {
+          "lunch": [
+            "MAMINE SMAKI zapraszają na dzisiejszy zestaw dnia 🥰",
+            "👉DANIE DNIA-panierowany morszczuk-.",
+            "W zestawie kupisz taniej-🥳🥳🥳"
+          ],
+          "soup": "👉DNIA-kapuśniak ze słodkiej kapusty - 🥣😋",
+          "price": 34,
+          "hasMenu": true
+        }
+      },
+      "status": {
+        "hasAnyLunch": true,
+        "isComplete": true
+      }
+    },
+    {
+      "id": "mangomaman",
+      "name": "Mango Mama Nadodrze",
+      "city": "Wrocław",
+      "address": "Jedności Narodowej 77",
+      "phone": "531 089 532",
+      "facebookUrl": "https://www.facebook.com/mangomamafood/",
+      "isActive": true,
+      "lat": 51.1208403,
+      "lng": 17.0416346,
+      "menus": {
+        "monday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "tuesday": {
+          "lunch": [
+            "Czas na lunch w Mango Mama! 🍛✨",
+            "Od poniedziałku do piątku między :a :czeka na Ciebie lunch w cenie 💛",
+            "🌶️ Rainbow Jalfrezi"
+          ],
+          "soup": null,
+          "price": 11,
+          "hasMenu": true
+        },
+        "wednesday": {
+          "lunch": [
+            "Zapraszamy na lunch! ❤️",
+            "No photo description available."
+          ],
+          "soup": null,
+          "price": null,
+          "hasMenu": true
+        },
+        "thursday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "friday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        }
+      },
+      "status": {
+        "hasAnyLunch": true,
+        "isComplete": false
+      }
+    },
+    {
+      "id": "maniasmaku",
+      "name": "Mania Smaku Racławicka",
+      "city": "Wrocław",
+      "address": "Racławicka 13",
+      "phone": "71 307 75 75",
+      "facebookUrl": "https://www.facebook.com/Mania.Smaku.Raclawicka/",
+      "isActive": true,
+      "lat": 51.0856444,
+      "lng": 17.0090849,
+      "menus": {
+        "monday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "tuesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "wednesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "thursday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "friday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        }
+      },
+      "status": {
+        "hasAnyLunch": false,
+        "isComplete": false
+      }
+    },
+    {
+      "id": "meatologia",
+      "name": "Meatologia",
+      "city": "Wrocław",
+      "address": "Świdnicka 40",
+      "phone": "692 011 435",
+      "facebookUrl": "https://www.facebook.com/meatologiasztukaprawdziwegomiesa/",
+      "isActive": true,
+      "lat": 51.1032928,
+      "lng": 17.0326631,
+      "menus": {
+        "monday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "tuesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "wednesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "thursday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "friday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        }
+      },
+      "status": {
+        "hasAnyLunch": false,
+        "isComplete": false
+      }
+    },
+    {
+      "id": "mollinari",
+      "name": "Mollinari",
+      "city": "Wrocław",
+      "address": "Wita Stwosza 56",
+      "phone": "575 678 503",
+      "facebookUrl": "https://www.facebook.com/MollinariWroclaw/",
+      "isActive": true,
+      "lat": 51.1105267,
+      "lng": 17.0341919,
+      "menus": {
+        "monday": {
+          "lunch": [],
+          "soup": "No photo description available. No photo description available. May be an image of steak No photo description available. May be an image of text that says 'lunch lunchmenu menu PONIEDZIAŁEK ΡΟΝΕΟΣΙΑΣEK-PΪΆTEK0-:-PIĄTEK :- :+ pizza makaron zupa makaron des",
+          "price": 16,
+          "hasMenu": false
+        },
+        "tuesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "wednesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "thursday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "friday": {
+          "lunch": [
+            "🍰 DESER DNIA 🍰",
+            "Nowość w menu 🍽️",
+            "Beza przekładana kremem z mascarpone, borówki w środku, do tego sos z owoców leśnych obok 🍓"
+          ],
+          "soup": "May be an image of pizza and text that says 'e4m mAA EEnA lunch PIATEK makaro makaron deser menu :: +pizz PONIEDZIAKEK. plza zupa pizza Lemoniada makar lub Wino- ZUPY Zupa dzis sery dnia *spytaj. MAK ARON Pappardelle gorgonzola spinaci smietanka szpinak, ",
+          "price": 15,
+          "hasMenu": true
+        }
+      },
+      "status": {
+        "hasAnyLunch": true,
+        "isComplete": false
+      }
+    },
+    {
+      "id": "podpapugam",
+      "name": "Pod Papugami",
+      "city": "Wrocław",
+      "address": "Rynek, Sukiennice 9A",
+      "phone": "695 102 939",
+      "facebookUrl": "https://www.facebook.com/podpapugami/",
+      "isActive": true,
+      "lat": 51.1100942,
+      "lng": 17.0313162,
+      "menus": {
+        "monday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "tuesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "wednesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "thursday": {
+          "lunch": [
+            "W grudniu widzimyyy się codziennie od :🥂✨",
+            "Przez cały miesiąc Pod Papugami jesteśmy dla Was czynni od godziny :– idealnie na niespieszny obiad, kieliszek wina czy świąteczne spotkania z bliskimi. 🎄🍷",
+            "W tygodniu czekają na Was także zestawy lunchowe:"
+          ],
+          "soup": "🥣 + 🍽️ danie główne w cenie",
+          "price": 13,
+          "hasMenu": true
+        },
+        "friday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        }
+      },
+      "status": {
+        "hasAnyLunch": true,
+        "isComplete": false
+      }
+    },
+    {
+      "id": "polskiesma",
+      "name": "Polskie Smaki",
+      "city": "Wrocław",
+      "address": "Piłsudskiego 74",
+      "phone": "501 074 114",
+      "facebookUrl": "https://www.facebook.com/polskiesmakiwroclaw/",
+      "isActive": true,
+      "lat": 51.1012001,
+      "lng": 17.0322726,
+      "menus": {
+        "monday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "tuesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "wednesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "thursday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "friday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        }
+      },
+      "status": {
+        "hasAnyLunch": false,
+        "isComplete": false
+      }
+    },
+    {
+      "id": "setkawrocl",
+      "name": "SETKA Wrocław",
+      "city": "Wrocław",
+      "address": "Kazimierza Wielkiego 50",
+      "phone": "733 407 407",
+      "facebookUrl": "https://www.facebook.com/Setka.Wroclaw/",
+      "isActive": true,
+      "lat": 51.1077045,
+      "lng": 17.0316186,
+      "menus": {
+        "monday": {
+          "lunch": [
+            "Rozpiska lunchy na ten tydzień!",
+            "Wpadajcie i zajadajcie😋",
+            "#restauracjawrocław #lunchdnia #pomyslnaobiad #conaobiad #restauracja #obiaddomowy #kuchniapolska #wroclawfood #jedzeniewroclaw #wroclawcity #food #lunch #meal"
+          ],
+          "soup": null,
+          "price": 33.9,
+          "hasMenu": true
+        },
+        "tuesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "wednesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "thursday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "friday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        }
+      },
+      "status": {
+        "hasAnyLunch": true,
+        "isComplete": false
+      }
+    },
+    {
+      "id": "thaliwrocl",
+      "name": "Thali Ruska",
+      "city": "Wrocław",
+      "address": "Ruska 19",
+      "phone": "727 817 771",
+      "facebookUrl": "https://www.facebook.com/thaliwroclove/",
+      "isActive": true,
+      "lat": 51.1106089,
+      "lng": 17.0259819,
+      "menus": {
+        "monday": {
+          "lunch": [
+            "stycznia",
+            "📍Thali na Ruskiej: Tikka Masala",
+            "📍Thali na Jedności: Lokal nieczynny - dostawy realizujemy z Placu Grunwaldzkiego"
+          ],
+          "soup": null,
+          "price": 19,
+          "hasMenu": true
+        },
+        "tuesday": {
+          "lunch": [
+            "stycznia",
+            "📍Thali na Ruskiej: Kadai",
+            "📍Thali na Jedności: Butter Masala"
+          ],
+          "soup": null,
+          "price": 20,
+          "hasMenu": true
+        },
+        "wednesday": {
+          "lunch": [
+            "stycznia",
+            "📍Thali na Ruskiej: Butter Masala",
+            "📍Thali na Jedności: Tikka Masala"
+          ],
+          "soup": null,
+          "price": 21,
+          "hasMenu": true
+        },
+        "thursday": {
+          "lunch": [
+            "stycznia",
+            "📍Thali na Ruskiej: Palak",
+            "📍Thali na Jedności: Laziz"
+          ],
+          "soup": null,
+          "price": 22,
+          "hasMenu": true
+        },
+        "friday": {
+          "lunch": [
+            "stycznia",
+            "📍Thali na Ruskiej: Lababdar",
+            "📍Thali na Jedności: Jalfrezi"
+          ],
+          "soup": null,
+          "price": 23,
+          "hasMenu": true
+        }
+      },
+      "status": {
+        "hasAnyLunch": true,
+        "isComplete": true
+      }
+    },
+    {
+      "id": "woosabiwro",
+      "name": "Woosabi",
+      "city": "Wrocław",
+      "address": "Pawła Włodkowica 21",
+      "phone": "789 146 225",
+      "facebookUrl": "https://www.facebook.com/woosabiwro/",
+      "isActive": true,
+      "lat": 51.1090552,
+      "lng": 17.0234229,
+      "menus": {
+        "monday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "tuesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "wednesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "thursday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "friday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        }
+      },
+      "status": {
+        "hasAnyLunch": false,
+        "isComplete": false
+      }
+    },
+    {
+      "id": "yemsetu",
+      "name": "Yemsetu",
+      "city": "Wrocław",
+      "address": "pl. Piłsudskiego 5",
+      "phone": "667 222 006",
+      "facebookUrl": "https://www.facebook.com/Yemsetu/",
+      "isActive": true,
+      "lat": 51.1375696,
+      "lng": 17.0556886,
+      "menus": {
+        "monday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "tuesday": {
+          "lunch": [
+            "🍜 Lunch w Yemsetu",
+            "Między spotkaniami, w przerwie od pracy albo po prostu z głodu.",
+            "Od :do :czeka na Was zestaw, który robi robotę:"
+          ],
+          "soup": null,
+          "price": 12,
+          "hasMenu": true
+        },
+        "wednesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "thursday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        },
+        "friday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
+        }
+      },
+      "status": {
+        "hasAnyLunch": true,
+        "isComplete": false
+      }
+    }
+  ]
+}
