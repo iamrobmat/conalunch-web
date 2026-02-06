@@ -1,6 +1,13 @@
 (() => {
   const DAY_KEYS = ["monday", "tuesday", "wednesday", "thursday", "friday"];
   const DAY_LABELS = {
+    monday: "Poniedzialek",
+    tuesday: "Wtorek",
+    wednesday: "Sroda",
+    thursday: "Czwartek",
+    friday: "Piatek",
+  };
+  const DAY_SHORT = {
     monday: "Pon",
     tuesday: "Wt",
     wednesday: "Sr",
@@ -8,24 +15,38 @@
     friday: "Pt",
   };
   const CITY_FALLBACK_CENTER = {
-    "Bialystok": [53.1325, 23.1688],
+    Bialystok: [53.1325, 23.1688],
     "Białystok": [53.1325, 23.1688],
-    "Wroclaw": [51.1079, 17.0385],
+    Wroclaw: [51.1079, 17.0385],
     "Wrocław": [51.1079, 17.0385],
   };
 
   const STORAGE_KEYS = {
     city: "conalunch_city",
     day: "conalunch_day",
-    scope: "conalunch_scope",
     pane: "conalunch_mobile_pane",
+  };
+
+  // SVG icons (Feather-style, 16×16)
+  const ICONS = {
+    phone: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>',
+    facebook: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>',
+    mapPin: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+    navigate: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>',
+    navigation: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>',
+  };
+
+  const CITY_COATS = {
+    "Białystok": "./assets/POL_Białystok_COA.svg.png",
+    "Bialystok": "./assets/POL_Białystok_COA.svg.png",
+    "Wrocław": "./assets/Herb_wroclaw.svg.png",
+    "Wroclaw": "./assets/Herb_wroclaw.svg.png",
   };
 
   const state = {
     dataset: null,
     city: null,
     dayKey: null,
-    scope: "all",
     map: null,
     markerLayer: null,
     markers: new Map(),
@@ -35,12 +56,14 @@
 
   const ui = {
     metaInfo: document.getElementById("metaInfo"),
-    citySelect: document.getElementById("citySelect"),
+    cityDropdown: document.getElementById("cityDropdown"),
+    cityDropdownBtn: document.getElementById("cityDropdownBtn"),
+    cityDropdownMenu: document.getElementById("cityDropdownMenu"),
+    cityIcon: document.getElementById("cityIcon"),
+    cityLabel: document.getElementById("cityLabel"),
     dayChips: document.getElementById("dayChips"),
     prevDay: document.getElementById("prevDay"),
     nextDay: document.getElementById("nextDay"),
-    scopeSwitch: document.getElementById("scopeSwitch"),
-    kpiBar: document.getElementById("kpiBar"),
     cards: document.getElementById("cards"),
     weekendNote: document.getElementById("weekendNote"),
     mobilePanes: document.getElementById("mobilePanes"),
@@ -50,8 +73,8 @@
   };
 
   init().catch((error) => {
-    ui.metaInfo.textContent = "Blad ladowania danych";
-    ui.cards.innerHTML = `<article class="empty-state"><h2>Nie mozna zaladowac serwisu</h2><p>${escapeHtml(String(error))}</p></article>`;
+    ui.metaInfo.textContent = "Blad ladowania";
+    ui.cards.innerHTML = `<article class="empty-state"><h2>Nie mozna zaladowac danych</h2><p>${escapeHtml(String(error))}</p></article>`;
   });
 
   async function init() {
@@ -73,36 +96,77 @@
   function prepareInitialState() {
     const cities = [...(state.dataset.cities || [])];
     const savedCity = localStorage.getItem(STORAGE_KEYS.city);
-    state.city = savedCity && cities.includes(savedCity) ? savedCity : (cities[0] || null);
+    state.city = savedCity && cities.includes(savedCity) ? savedCity : cities[0] || null;
 
     const savedDay = localStorage.getItem(STORAGE_KEYS.day);
-    const initialDay = savedDay && DAY_KEYS.includes(savedDay) ? savedDay : dayFromCurrentDate();
-    state.dayKey = initialDay;
-
-    const savedScope = localStorage.getItem(STORAGE_KEYS.scope);
-    if (savedScope && ["all", "today", "week"].includes(savedScope)) {
-      state.scope = savedScope;
-    }
+    state.dayKey = savedDay && DAY_KEYS.includes(savedDay) ? savedDay : dayFromCurrentDate();
 
     const savedPane = localStorage.getItem(STORAGE_KEYS.pane);
     if (savedPane && ["list", "map"].includes(savedPane)) {
       state.mobilePane = savedPane;
     }
 
-    ui.citySelect.innerHTML = cities
-      .map((city) => `<option value="${escapeHtml(city)}">${escapeHtml(city)}</option>`)
-      .join("");
-
-    if (state.city) ui.citySelect.value = state.city;
-    setActiveScopeButton();
+    renderCityDropdown(cities);
     setMobilePane(state.mobilePane);
   }
 
+  function renderCityDropdown(cities) {
+    // Update button with current city
+    if (state.city) {
+      const coatSrc = CITY_COATS[state.city] || "";
+      ui.cityIcon.src = coatSrc;
+      ui.cityIcon.alt = state.city;
+      ui.cityLabel.textContent = state.city;
+    }
+
+    // Render dropdown menu items
+    ui.cityDropdownMenu.innerHTML = cities
+      .map((city) => {
+        const coatSrc = CITY_COATS[city] || "";
+        const selected = city === state.city ? "is-selected" : "";
+        return `<button type="button" class="city-dropdown-item ${selected}" data-city="${escapeAttr(city)}">
+          <img class="city-icon" src="${escapeAttr(coatSrc)}" alt="${escapeAttr(city)}">
+          ${escapeHtml(city)}
+        </button>`;
+      })
+      .join("");
+  }
+
   function bindEvents() {
-    ui.citySelect.addEventListener("change", () => {
-      state.city = ui.citySelect.value;
+    // City dropdown
+    ui.cityDropdownBtn.addEventListener("click", () => {
+      const isOpen = ui.cityDropdown.classList.toggle("is-open");
+      ui.cityDropdownMenu.hidden = !isOpen;
+    });
+
+    ui.cityDropdownMenu.addEventListener("click", (event) => {
+      const target = event.target;
+      if (!(target instanceof HTMLElement)) return;
+      const item = target.closest("[data-city]");
+      if (!(item instanceof HTMLElement)) return;
+      const city = item.dataset.city;
+      if (!city) return;
+      
+      state.city = city;
       persistState();
+      
+      // Update UI
+      const cities = [...(state.dataset.cities || [])];
+      renderCityDropdown(cities);
+      
+      // Close dropdown
+      ui.cityDropdown.classList.remove("is-open");
+      ui.cityDropdownMenu.hidden = true;
+      
       render();
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener("click", (event) => {
+      if (!ui.cityDropdown.contains(event.target)) {
+        ui.cityDropdown.classList.remove("is-open");
+        ui.cityDropdownMenu.hidden = true;
+      }
     });
 
     ui.prevDay.addEventListener("click", () => {
@@ -122,20 +186,11 @@
     ui.dayChips.addEventListener("click", (event) => {
       const target = event.target;
       if (!(target instanceof HTMLElement)) return;
-      const key = target.dataset.day;
+      const chip = target.closest("[data-day]");
+      if (!(chip instanceof HTMLElement)) return;
+      const key = chip.dataset.day;
       if (!key || !DAY_KEYS.includes(key)) return;
       state.dayKey = key;
-      persistState();
-      render();
-    });
-
-    ui.scopeSwitch.addEventListener("click", (event) => {
-      const target = event.target;
-      if (!(target instanceof HTMLElement)) return;
-      const scope = target.dataset.scope;
-      if (!scope || !["all", "today", "week"].includes(scope)) return;
-      state.scope = scope;
-      setActiveScopeButton();
       persistState();
       render();
     });
@@ -164,32 +219,33 @@
       attributionControl: true,
     }).setView([52.0, 19.0], 6);
 
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
       maxZoom: 19,
-      attribution: "&copy; OpenStreetMap contributors",
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
+      subdomains: "abcd",
     }).addTo(state.map);
 
     state.markerLayer = L.layerGroup().addTo(state.map);
   }
 
+  // ——— Rendering ———
+
   function render() {
     renderDayChips();
-    setActiveScopeButton();
     renderMeta();
     renderWeekendNote();
 
     const cityRestaurants = getCityRestaurants();
-    const visibleRestaurants = applyScope(sortRestaurants(cityRestaurants));
+    const sorted = sortRestaurants(cityRestaurants);
 
-    renderKpis(cityRestaurants, visibleRestaurants);
-    renderCards(visibleRestaurants);
-    renderMap(visibleRestaurants);
+    renderCards(sorted);
+    renderMap(sorted);
   }
 
   function renderMeta() {
     const meta = state.dataset.meta || {};
-    const label = DAY_LABELS[state.dayKey] || state.dayKey;
-    ui.metaInfo.textContent = `Miasto: ${state.city || "-"} | Dzien: ${label} | Tydzien ${meta.week || "-"}/${meta.year || "-"}`;
+    const dayLabel = DAY_LABELS[state.dayKey] || state.dayKey;
+    ui.metaInfo.textContent = `${dayLabel} · tydzien ${meta.week || "?"}/${meta.year || "?"}`;
   }
 
   function renderWeekendNote() {
@@ -200,18 +256,12 @@
   function renderDayChips() {
     ui.dayChips.innerHTML = DAY_KEYS.map((key) => {
       const active = key === state.dayKey ? "is-active" : "";
-      return `<button type="button" class="chip ${active}" data-day="${key}">${DAY_LABELS[key]}</button>`;
+      return `<button type="button" class="chip ${active}" data-day="${key}">${DAY_SHORT[key]}</button>`;
     }).join("");
 
     const idx = DAY_KEYS.indexOf(state.dayKey);
     ui.prevDay.disabled = idx <= 0;
     ui.nextDay.disabled = idx >= DAY_KEYS.length - 1;
-  }
-
-  function setActiveScopeButton() {
-    for (const btn of ui.scopeSwitch.querySelectorAll("button")) {
-      btn.classList.toggle("is-active", btn.dataset.scope === state.scope);
-    }
   }
 
   function setMobilePane(pane) {
@@ -223,23 +273,7 @@
     }
   }
 
-  function renderKpis(cityRestaurants, visibleRestaurants) {
-    const todayCount = cityRestaurants.filter((r) => getDayMenu(r).hasMenu).length;
-    const weekCount = cityRestaurants.filter((r) => Boolean(r.status && r.status.hasAnyLunch)).length;
-    const withoutWeek = cityRestaurants.length - weekCount;
-    const dishesVisible = visibleRestaurants.reduce((sum, r) => sum + getDayMenu(r).lunch.length, 0);
-
-    ui.kpiBar.innerHTML = [
-      kpiHtml("Restauracje", cityRestaurants.length),
-      kpiHtml("Z menu dnia", todayCount),
-      kpiHtml("Bez lunchu tyg.", withoutWeek),
-      kpiHtml("Dania (widok)", dishesVisible),
-    ].join("");
-  }
-
-  function kpiHtml(label, value) {
-    return `<article class="kpi"><span>${label}</span><strong>${value}</strong></article>`;
-  }
+  // ——— Cards with grouping ———
 
   function renderCards(restaurants) {
     if (!restaurants.length) {
@@ -248,63 +282,121 @@
       return;
     }
 
-    ui.cards.innerHTML = restaurants
-      .map((restaurant, index) => buildCardHtml(restaurant, index))
-      .join("");
+    // Split into groups
+    const withLunch = restaurants.filter((r) => getDayMenu(r).hasMenu);
+    const withWeekLunch = restaurants.filter(
+      (r) => !getDayMenu(r).hasMenu && Boolean(r.status && r.status.hasAnyLunch)
+    );
+    const noLunch = restaurants.filter(
+      (r) => !getDayMenu(r).hasMenu && !(r.status && r.status.hasAnyLunch)
+    );
+
+    let html = "";
+    let animIdx = 0;
+
+    if (withLunch.length) {
+      html += groupHeader("Lunch dnia", withLunch.length);
+      for (const r of withLunch) {
+        html += buildCardHtml(r, animIdx++);
+      }
+    }
+
+    if (withWeekLunch.length) {
+      html += groupHeader("Lunch tygodnia", withWeekLunch.length);
+      for (const r of withWeekLunch) {
+        html += buildCardHtml(r, animIdx++);
+      }
+    }
+
+    if (noLunch.length) {
+      html += groupHeader("Pozostale", noLunch.length);
+      for (const r of noLunch) {
+        html += buildCardHtml(r, animIdx++);
+      }
+    }
+
+    ui.cards.innerHTML = html;
+  }
+
+  function groupHeader(label, count) {
+    return `<div class="card-group-header">${escapeHtml(label)} <span class="card-group-count">${count}</span></div>`;
   }
 
   function buildCardHtml(restaurant, index) {
     const menu = getDayMenu(restaurant);
     const hasAnyLunch = Boolean(restaurant.status && restaurant.status.hasAnyLunch);
-    const isMuted = menu.hasMenu ? "" : "card--muted";
-    const isSleep = hasAnyLunch ? "" : "card--sleep";
 
-    const badgeMenu = menu.hasMenu
-      ? `<span class="badge badge-ok">Ma lunch dnia</span>`
-      : `<span class="badge badge-flat">Brak lunchu dnia</span>`;
+    // Card modifier
+    const cardClass = menu.hasMenu ? "" : "card--muted";
 
-    const badgeWeek = hasAnyLunch
-      ? `<span class="badge badge-warn">Ma lunch tyg.</span>`
-      : `<span class="badge badge-flat">Brak lunchu tyg.</span>`;
+    // Single badge with tooltip
+    let badgeHtml = "";
+    if (menu.hasMenu) {
+      badgeHtml = `<span class="badge badge-today" title="Codziennie inna oferta lunchowa — menu na wybrany dzien">Lunch dnia</span>`;
+    } else if (hasAnyLunch) {
+      badgeHtml = `<span class="badge badge-week" title="Stala oferta lunchowa na caly tydzien — sprawdz inne dni">Lunch tygodnia</span>`;
+    }
 
-    const menuHtml = menu.hasMenu
-      ? `
+    // Price (prominent, top-right)
+    const priceHtml = menu.hasMenu && menu.price != null
+      ? `<span class="card-price">${formatPrice(menu.price)}</span>`
+      : "";
+
+    // Menu content
+    let menuHtml = "";
+    if (menu.hasMenu) {
+      const dishCount = menu.lunch.length;
+      const labelHtml = dishCount > 1 ? `<p class="menu-label">Do wyboru:</p>` : "";
+      const dishesHtml = menu.lunch.map((dish) => `<p class="menu-dish">${escapeHtml(dish)}</p>`).join("");
+      const includedHtml = menu.soup
+        ? `<div class="menu-included"><p class="menu-included-label">W zestawie:</p><p class="menu-included-value">${escapeHtml(menu.soup)}</p></div>`
+        : "";
+
+      menuHtml = `
         <div class="menu-block">
-          <ul>${menu.lunch.map((dish) => `<li>${escapeHtml(dish)}</li>`).join("")}</ul>
-          <div class="menu-extra">
-            ${menu.soup ? `<span>Zupa: ${escapeHtml(menu.soup)}</span>` : ""}
-            ${menu.price != null ? `<span>Cena: ${formatPrice(menu.price)}</span>` : ""}
-          </div>
+          ${labelHtml}
+          <div class="menu-dishes">${dishesHtml}</div>
+          ${includedHtml}
         </div>
-      `
-      : `<p class="no-menu">${hasAnyLunch ? "Brak oferty na wybrany dzien." : "Sledzimy restauracje, ale aktualnie nie ma lunchu w tygodniu."}</p>`;
+      `;
+    } else if (hasAnyLunch) {
+      menuHtml = `<p class="no-menu">Brak oferty na wybrany dzien — sprawdz inny dzien tygodnia.</p>`;
+    } else {
+      menuHtml = `<p class="no-menu">Brak aktualnego lunchu w tym tygodniu.</p>`;
+    }
 
-    const phoneButton = restaurant.phone
-      ? `<a class="btn btn-call" href="tel:${sanitizePhone(restaurant.phone)}">Zadzwon</a>`
-      : `<button class="btn btn-link" type="button" disabled>Brak telefonu</button>`;
+    // Actions
+    const phoneBtn = restaurant.phone
+      ? `<a class="btn-primary" href="tel:${sanitizePhone(restaurant.phone)}">${ICONS.phone} Zadzwon</a>`
+      : `<button class="btn-primary" type="button" disabled>${ICONS.phone} Brak tel.</button>`;
 
-    const fbButton = restaurant.facebookUrl
-      ? `<a class="btn btn-link" href="${escapeAttr(restaurant.facebookUrl)}" target="_blank" rel="noopener noreferrer">Facebook</a>`
-      : `<button class="btn btn-link" type="button" disabled>Brak linku</button>`;
+    const fbBtn = restaurant.facebookUrl
+      ? `<a class="btn-icon" href="${escapeAttr(restaurant.facebookUrl)}" target="_blank" rel="noopener noreferrer" title="Facebook">${ICONS.facebook}<span class="btn-icon-tooltip">Facebook</span></a>`
+      : "";
+
+    const mapBtn = `<button class="btn-icon" type="button" data-focus-id="${escapeAttr(restaurant.id)}" title="Pokaz na mapie">${ICONS.mapPin}<span class="btn-icon-tooltip">Na mapie</span></button>`;
 
     const navLink = buildNavigationLink(restaurant);
 
     return `
-      <article class="card ${isMuted} ${isSleep}" style="animation-delay:${Math.min(index * 40, 360)}ms">
+      <article class="card ${cardClass}" style="animation-delay:${Math.min(index * 35, 400)}ms">
         <div class="card-head">
           <div>
             <h3>${escapeHtml(restaurant.name)}</h3>
-            <p class="card-meta">${escapeHtml(restaurant.address || "Brak adresu")} • ${escapeHtml(restaurant.city || "")}</p>
+            <p class="card-meta">${escapeHtml(restaurant.address || "Brak adresu")} · ${escapeHtml(restaurant.city || "")}</p>
           </div>
-          <div class="badges">${badgeMenu}${badgeWeek}</div>
+          <div class="card-head-right">
+            ${priceHtml}
+            ${badgeHtml}
+          </div>
         </div>
 
         ${menuHtml}
 
         <div class="card-actions">
-          ${phoneButton}
-          ${fbButton}
-          <button class="btn btn-map" type="button" data-focus-id="${escapeAttr(restaurant.id)}">Pokaz na mapie</button>
+          ${phoneBtn}
+          ${fbBtn}
+          ${mapBtn}
           ${navLink}
         </div>
       </article>
@@ -318,8 +410,10 @@
       : [restaurant.name, restaurant.address, restaurant.city].filter(Boolean).join(", ");
     if (!query) return "";
     const href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
-    return `<a class="btn btn-link" href="${escapeAttr(href)}" target="_blank" rel="noopener noreferrer">Nawiguj</a>`;
+    return `<a class="btn-icon" href="${escapeAttr(href)}" target="_blank" rel="noopener noreferrer" title="Nawiguj">${ICONS.navigation}<span class="btn-icon-tooltip">Nawiguj</span></a>`;
   }
+
+  // ——— Map ———
 
   function renderMap(restaurants) {
     if (!state.map || !state.markerLayer) return;
@@ -334,7 +428,7 @@
 
       const menu = getDayMenu(restaurant);
       const hasAnyLunch = Boolean(restaurant.status && restaurant.status.hasAnyLunch);
-      const color = menu.hasMenu ? "#2f9e44" : hasAnyLunch ? "#c17a0f" : "#7b8480";
+      const color = menu.hasMenu ? "#00b2ca" : hasAnyLunch ? "#d4c44e" : "#e9e3e6";
 
       const marker = L.circleMarker([restaurant.lat, restaurant.lng], {
         radius: 8,
@@ -349,7 +443,7 @@
       bounds.push([restaurant.lat, restaurant.lng]);
     }
 
-    const boundsKey = `${state.city}-${state.dayKey}-${state.scope}-${bounds.length}`;
+    const boundsKey = `${state.city}-${state.dayKey}-${bounds.length}`;
     if (bounds.length && boundsKey !== state.boundsKey) {
       state.map.fitBounds(bounds, { padding: [30, 30], maxZoom: 14 });
       state.boundsKey = boundsKey;
@@ -366,13 +460,13 @@
   function buildPopupHtml(restaurant, menu) {
     const lines = menu.hasMenu
       ? menu.lunch.map((dish) => `<li>${escapeHtml(dish)}</li>`).join("")
-      : "<li>Brak lunchu na wybrany dzien</li>";
+      : "<li style='color:#717171'>Brak lunchu na wybrany dzien</li>";
 
     return `
-      <div style="min-width:190px">
-        <strong>${escapeHtml(restaurant.name)}</strong><br />
-        <small>${escapeHtml(restaurant.city || "")}</small>
-        <ul style="margin:8px 0 6px 16px;padding:0">${lines}</ul>
+      <div style="min-width:190px;font-family:Inter,-apple-system,sans-serif">
+        <strong style="font-size:14px">${escapeHtml(restaurant.name)}</strong><br/>
+        <small style="color:#717171">${escapeHtml(restaurant.address || "")} · ${escapeHtml(restaurant.city || "")}</small>
+        <ul style="margin:8px 0 4px 16px;padding:0;font-size:13px">${lines}</ul>
       </div>
     `;
   }
@@ -391,18 +485,10 @@
     }
   }
 
-  function getCityRestaurants() {
-    return (state.dataset.restaurants || []).filter((restaurant) => restaurant.city === state.city);
-  }
+  // ——— Data helpers ———
 
-  function applyScope(restaurants) {
-    if (state.scope === "today") {
-      return restaurants.filter((restaurant) => getDayMenu(restaurant).hasMenu);
-    }
-    if (state.scope === "week") {
-      return restaurants.filter((restaurant) => Boolean(restaurant.status && restaurant.status.hasAnyLunch));
-    }
-    return restaurants;
+  function getCityRestaurants() {
+    return (state.dataset.restaurants || []).filter((r) => r.city === state.city);
   }
 
   function sortRestaurants(restaurants) {
@@ -426,9 +512,7 @@
 
   function dayFromCurrentDate() {
     const day = new Date().getDay();
-    if (day >= 1 && day <= 5) {
-      return DAY_KEYS[day - 1];
-    }
+    if (day >= 1 && day <= 5) return DAY_KEYS[day - 1];
     return "friday";
   }
 
@@ -443,7 +527,6 @@
   function persistState() {
     if (state.city) localStorage.setItem(STORAGE_KEYS.city, state.city);
     if (state.dayKey) localStorage.setItem(STORAGE_KEYS.day, state.dayKey);
-    if (state.scope) localStorage.setItem(STORAGE_KEYS.scope, state.scope);
     if (state.mobilePane) localStorage.setItem(STORAGE_KEYS.pane, state.mobilePane);
   }
 
@@ -453,9 +536,7 @@
 
   function registerServiceWorker() {
     if (!("serviceWorker" in navigator)) return;
-    navigator.serviceWorker.register("./sw.js").catch(() => {
-      // Offline cache is optional for this static MVP.
-    });
+    navigator.serviceWorker.register("./sw.js").catch(() => {});
   }
 
   function escapeHtml(value) {
