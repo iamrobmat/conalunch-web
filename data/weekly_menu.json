@@ -1,12 +1,12 @@
 {
   "meta": {
-    "generatedAt": "2026-02-04T10:34:42.874Z",
+    "generatedAt": "2026-02-06T13:46:26.156Z",
     "week": 4,
     "year": 2026,
     "cityFilter": null,
     "includeInactive": false,
     "restaurants": 35,
-    "menus": 12
+    "menus": 24
   },
   "cities": [
     "Białystok",
@@ -25,22 +25,32 @@
       "lng": 23.1557737,
       "menus": {
         "monday": {
-          "lunch": [],
+          "lunch": [
+            "📅 grudnia 5 (poniedziałek)"
+          ],
           "soup": null,
-          "price": null,
-          "hasMenu": false
+          "price": 29,
+          "hasMenu": true
         },
         "tuesday": {
-          "lunch": [],
-          "soup": null,
+          "lunch": [
+            "🎆 Sylwester 5 w Hotelu Cristal - elegancja, smak i muzyka w centrum Białegostoku",
+            "Końcówka roku to idealny moment, aby podziękować bliskim, współpracownikom i partnerom za wspólny czas.",
+            "W Hotelu Cristal przygotowaliśmy kameralny, uroczysty wieczór sylwestrowy, który łączy wykwintne smaki z muzyką na żywo i elegancką atmosferą czterogwiazdkowego hotelu."
+          ],
+          "soup": "🍽️ Kolacja serwowana (+ popisowe danie główne Szefowej Kuchni)",
           "price": null,
-          "hasMenu": false
+          "hasMenu": true
         },
         "wednesday": {
-          "lunch": [],
+          "lunch": [
+            "📅 grudnia 5 (środa)",
+            "W tych terminach restauracja nie będzie przyjmowała Gości.",
+            "Pozostałe dni działamy w standardowych godzinach otwarcia i serdecznie zapraszamy na lunch, kolację i spotkania przy dobrej kuchni. 🍽️✨"
+          ],
           "soup": null,
-          "price": null,
-          "hasMenu": false
+          "price": 31,
+          "hasMenu": true
         },
         "thursday": {
           "lunch": [],
@@ -56,7 +66,7 @@
         }
       },
       "status": {
-        "hasAnyLunch": false,
+        "hasAnyLunch": true,
         "isComplete": false
       }
     },
@@ -119,14 +129,10 @@
       "lng": 23.1648545,
       "menus": {
         "monday": {
-          "lunch": [
-            "Rulonik drobiowy z pieczarkami i mozzarellą w sosie śmietanowym, ziemniaki, surówka",
-            "Karkówka w kremowym sosie paprykowym, kasza gryczana, surówka",
-            "\"Schabowy\" pieczarkowy, frytki, surówka"
-          ],
-          "soup": "Pomidorowa",
+          "lunch": [],
+          "soup": "May be an image of text that says 'FAGRYCZNA POMIDOROWA FABRYCZNY PONIEDZIAŁEK każdy lunch ·RULONIK DROBIOWY z PIECZARKAMI I MOZARELLĄ w SOSIE ŚMIETANOWYM, ZIEMNIAKI SURÓWKA FABRYCZNA KARKÓWKA w KREMOWYM SOSIE PAPRYKOWYM KASZA GRYCZANA, SURÓWKA .\"SCHABOWY",
           "price": 26,
-          "hasMenu": true
+          "hasMenu": false
         },
         "tuesday": {
           "lunch": [],
@@ -148,11 +154,10 @@
         },
         "friday": {
           "lunch": [
-            "Ryba w sosie śmietanowo-koperkowym, ziemniaki, surówka",
-            "Filet z kurczaka w sosie ze szpinakiem i pomidorami suszonymi, ziemniaki, surówka",
-            "Babka ziemniaczana z sosem pieczarkowym, surówka"
+            "May be an image of text that says 'F FABR FABRYC C Pomysł na lunch Babka ziemniaczana z sosem pieczarkowymi i surówką iは ul. Fabryczna 4 tel. tel.FABRYCZNA Bistro'",
+            "FILET z KURCZAKA w SOSIE ZE SZPINAKIEM I POMIDORAMI SUSZONYMI ZIEMNIAKI SURÓWKA BABKA ZIEMNIACZANA z SOSEM PIECZARKOWYM SURÓWKA SCHABOWY DROBIOWY ZIEMNIAKI SURÓWKA WIEPRZOWY BURGERY Kurczak Rybka Smash, Schabowy Szarpany ,Halloumi ul. Fabryczna tel. FABRY"
           ],
-          "soup": "Brokułowa",
+          "soup": "May be an image of text that says 'każdy lunch zł FABRYCZNY PIATEK BROKUŁOWA RYBA w SOSIE ŚMIETANOWO- KOPERKOWYM ZIEMNIAKI SURÓWKA",
           "price": 26,
           "hasMenu": true
         }
@@ -174,10 +179,14 @@
       "lng": 23.1590777,
       "menus": {
         "monday": {
-          "lunch": [],
-          "soup": null,
-          "price": null,
-          "hasMenu": false
+          "lunch": [
+            "Nowy tydzień, nowy lunch w Browarze Stary Rynek 🍽️",
+            "Jak zawsze stawiamy na różnorodność i konkretne smaki.",
+            "Zupy:"
+          ],
+          "soup": "tajska z kurczakiem",
+          "price": 12,
+          "hasMenu": true
         },
         "tuesday": {
           "lunch": [],
@@ -205,7 +214,7 @@
         }
       },
       "status": {
-        "hasAnyLunch": false,
+        "hasAnyLunch": true,
         "isComplete": false
       }
     },
@@ -269,47 +278,52 @@
       "menus": {
         "monday": {
           "lunch": [
-            "Burger wołowy z oscypkiem i frytkami",
-            "Burger z grillowanym oscypkiem i frytkami"
+            "🍲🍝 :– :(lub do wyczerpania), pn.–pt. 🌟",
+            "Zrób sobie przerwę w pracy i wpadnij na chwilę relaksu — idealny sposób, by nabrać energii na resztę dnia. 🚶‍♀️☕️",
+            "🥬 PONIEDZIAŁEK: Krem z zielonych warzyw"
           ],
-          "soup": "Krem z zielonych warzyw",
-          "price": 38,
+          "soup": "🥬 PONIEDZIAŁEK: zacierkowa",
+          "price": 11,
           "hasMenu": true
         },
         "tuesday": {
           "lunch": [
-            "Spaghetti Bolognese z parmezanem",
-            "Spaghetti Aglio e Olio z parmezanem"
+            "1. Spaghetti w sosie Bolognese posypane parmezanem",
+            "2. Spaghetti Aglio e Olio posypane parmezanem",
+            "🥩 WTOREK: Krem z selera i pora"
           ],
-          "soup": "Zupa pieczarkowa",
-          "price": 38,
+          "soup": "🍄 WTOREK: pieczarkowa",
+          "price": 75,
           "hasMenu": true
         },
         "wednesday": {
           "lunch": [
-            "Cordon Blue z puree i marchewką",
-            "Medaliony z kalafiora z puree i marchewką"
+            "1. Cordon Blue, podany z puree ziemniaczanym i marchewką z porem",
+            "2. Medaliony z kalafiora podane z puree ziemniaczanym i marchewką z porem",
+            "🫛 ŚRODA: Barszcz czerwony"
           ],
-          "soup": "Zupa z soczewicy",
-          "price": 38,
+          "soup": "🫛 ŚRODA: z soczewicy",
+          "price": null,
           "hasMenu": true
         },
         "thursday": {
           "lunch": [
-            "Żeberka BBQ z ziemniakami i surówką",
-            "Chrupiące tofu w sosie słodko-kwaśnym"
+            "🎃 CZWARTEK: Krem z dyni z nutą pomarańczy",
+            "1. Żeberka BBQ, podane z ziemniakami opiekanymi i surówką z kiszonego ogórka",
+            "2. Chrupiące tofu w sosie słodko-kwaśnym na warzywnym tagliatelle"
           ],
-          "soup": "Krem z dyni z nutą pomarańczy",
-          "price": 38,
+          "soup": "🌽 CZWARTEK: Kremowa cebulowa z grzanką parmezanową",
+          "price": null,
           "hasMenu": true
         },
         "friday": {
           "lunch": [
-            "Ryba panierowana z puree i surówką",
-            "Pieczarki faszerowane z puree i surówką"
+            "1. Ryba panierowana podane z puree ziemniaczanym i surówką z kapusty kiszonej",
+            "2. Pieczarki faszerowane podane z puree ziemniaczanym i surówką z kapusty kiszonej",
+            "📌 Przyjdź i zjedz na miejscu"
           ],
-          "soup": "Zupa szczawiowa z jajkiem",
-          "price": 38,
+          "soup": "🍀 PIĄTEK: szczawiowa z jajkiem",
+          "price": 75,
           "hasMenu": true
         }
       },
@@ -330,10 +344,14 @@
       "lng": 23.1497331,
       "menus": {
         "monday": {
-          "lunch": [],
-          "soup": null,
-          "price": null,
-          "hasMenu": false
+          "lunch": [
+            "🥗Sałatka🥗",
+            "z 🐔 kurczakiem i 🍟frytkami",
+            "jak u mamy z fetą, suszonymi🍅 pomidorami i 🍞tostami"
+          ],
+          "soup": "🍽️Zestaw dnia🍱 : Karkówka po cygańsku 🥔ziemniaki/kasza/ryż + surówka +🍲",
+          "price": 24.99,
+          "hasMenu": true
         },
         "tuesday": {
           "lunch": [],
@@ -342,26 +360,38 @@
           "hasMenu": false
         },
         "wednesday": {
-          "lunch": [],
-          "soup": null,
-          "price": null,
-          "hasMenu": false
+          "lunch": [
+            "🥗Sałatka🥗",
+            "z 🐔 kurczakiem i 🍟frytkami",
+            "jak u mamy z fetą, suszonymi🍅 pomidorami i 🍞tostami"
+          ],
+          "soup": "🍽️Zestaw dnia🍱 Bitki wieprzowe w sosie pieczeniowym 🥔ziemniaki/kasza/ryż + surówka +🍲",
+          "price": 24.99,
+          "hasMenu": true
         },
         "thursday": {
-          "lunch": [],
-          "soup": null,
-          "price": null,
-          "hasMenu": false
+          "lunch": [
+            "🥗Sałatka🥗",
+            "z 🐔 kurczakiem i 🍟frytkami",
+            "jak u mamy z fetą, suszonymi🍅 pomidorami i 🍞tostami"
+          ],
+          "soup": "🍽️Zestaw dnia🍱 Kotlet pożarski 🥔ziemniaki/kasza/ryż + surówka +🍲",
+          "price": 24.99,
+          "hasMenu": true
         },
         "friday": {
-          "lunch": [],
-          "soup": null,
-          "price": null,
-          "hasMenu": false
+          "lunch": [
+            "🥗Sałatka🥗",
+            "z 🐔 kurczakiem i 🍟frytkami",
+            "jak u mamy z fetą, suszonymi🍅 pomidorami i 🍞tostami"
+          ],
+          "soup": "🍽️Zestaw dnia🍱 : Karkówka w sosie barbecue 🥔ziemniaki/kasza/ryż + surówka +🍲",
+          "price": 24.99,
+          "hasMenu": true
         }
       },
       "status": {
-        "hasAnyLunch": false,
+        "hasAnyLunch": true,
         "isComplete": false
       }
     },
@@ -378,42 +408,52 @@
       "menus": {
         "monday": {
           "lunch": [
-            "Kurczak w sosie z wędzonego boczku"
+            "🍽 PONIEDZIAŁEK",
+            "Panierowana pierś z kurczaka / purée ziemniaczane / marchew z porem",
+            "Krem z pomidorów"
           ],
-          "soup": "Krem z pomidorów",
-          "price": 34,
+          "soup": "jarzynowa",
+          "price": null,
           "hasMenu": true
         },
         "tuesday": {
           "lunch": [
-            "Kotlet mielony"
+            "🍽 WTOREK",
+            "Grochówka z boczkiem wędzonym",
+            "Karkówka / sos pieczeniowy / kluski śląskie / surówka z buraków"
           ],
-          "soup": "Zupa kalafiorowa z koperkiem",
-          "price": 34,
+          "soup": "kalafiorowa z koperkiem",
+          "price": null,
           "hasMenu": true
         },
         "wednesday": {
           "lunch": [
-            "Burger z żeberkiem wieprzowym"
+            "🍽 ŚRODA",
+            "Tom Kha",
+            "Schab w panko / ryż / warzywa słodko-kwaśne"
           ],
-          "soup": "Krem z ogórków kiszonych",
-          "price": 34,
+          "soup": null,
+          "price": null,
           "hasMenu": true
         },
         "thursday": {
           "lunch": [
-            "Gulasz wieprzowy"
+            "🍽 CZWARTEK",
+            "Krem z ziemniaków i pora",
+            "Tagliatelle ze szpinakiem / kurczak / suszone pomidory"
           ],
-          "soup": "Zupa grzybowa",
-          "price": 34,
+          "soup": "grzybowa",
+          "price": null,
           "hasMenu": true
         },
         "friday": {
           "lunch": [
-            "Tagliatelle z suszonymi pomidorami i ricottą"
+            "🍽 PIĄTEK",
+            "Kapuśniak",
+            "Dorsz w winie / purée ziemniaczane / dziki brokuł"
           ],
-          "soup": "Krem z papryki",
-          "price": 34,
+          "soup": "+Daniegłówne",
+          "price": 10,
           "hasMenu": true
         }
       },
@@ -440,32 +480,48 @@
           "hasMenu": false
         },
         "tuesday": {
-          "lunch": [],
-          "soup": null,
-          "price": null,
-          "hasMenu": false
+          "lunch": [
+            "Dzień dobry Kochani ❣️",
+            "Jarzynowa , żurek, rosół,pomidorowa , barszcz czerwony",
+            "Flaczki z pieczywem"
+          ],
+          "soup": "dnia",
+          "price": 20,
+          "hasMenu": true
         },
         "wednesday": {
-          "lunch": [],
-          "soup": null,
-          "price": null,
-          "hasMenu": false
+          "lunch": [
+            "Dzień dobry Kochani ❣️",
+            "Tak jak pisałam 😉",
+            "Jarzynowa, szczawiowa z jajem 🥚🥚🥚"
+          ],
+          "soup": "dnia",
+          "price": 34,
+          "hasMenu": true
         },
         "thursday": {
-          "lunch": [],
-          "soup": null,
-          "price": null,
-          "hasMenu": false
+          "lunch": [
+            "Dzień dobry Kochani ❣️",
+            "To będzie \" pyszny dzień\"",
+            "Bo, specjalistka od kartaczy- Ania ,uwija się od rana 😎"
+          ],
+          "soup": "dnia",
+          "price": 34,
+          "hasMenu": true
         },
         "friday": {
-          "lunch": [],
-          "soup": null,
-          "price": null,
-          "hasMenu": false
+          "lunch": [
+            "Dzień dobry Kochani ❣️",
+            "Kalafiorowa, kapuśniak, rosół, pomidorowa",
+            "Ryba miruna smażona, ziemniaki/ryż,"
+          ],
+          "soup": "dnia",
+          "price": 33,
+          "hasMenu": true
         }
       },
       "status": {
-        "hasAnyLunch": false,
+        "hasAnyLunch": true,
         "isComplete": false
       }
     },
@@ -482,58 +538,46 @@
       "menus": {
         "monday": {
           "lunch": [
-            "Kotlety mielone z puree ziemniaczanym",
-            "Kanapka Po Boy z krewetką",
-            "Arepas z pastą z fasoli"
+            "Niech poniedziałek kojarzy Wam się z czymś przyjemnym – na przykład z lunchem, na który warto czekać. Od dziś serwujemy nową kartę lunchową, w której znajdziecie zarówno azjatyckie akcenty, jak i genialną klasykę w nowoczesnym wydaniu.",
+            "Co dziś wybierzesz? 🥢",
+            "Przystawki (): Chrupiące Gyozy wieprzowe, krewetki w panko z salsą mango-chili lub faszerowane portobello."
           ],
-          "soup": "Zupa ogórkowa",
-          "price": 37,
+          "soup": "ogórkowa – przygotowana na wędzonce, podawana z ziemniakami i koperkiem.",
+          "price": 19,
           "hasMenu": true
         },
         "tuesday": {
           "lunch": [
-            "Kotlety mielone z puree ziemniaczanym",
-            "Kanapka Po Boy z krewetką",
-            "Arepas z pastą z fasoli"
+            "Gotowi na kulinarną podróż dookoła świata? 🌍🍽️",
+            "W tym tygodniu w Pawilonie nie znamy granic!",
+            "Nasz Szef Kuchni przygotował dla Was menu lunchowe, które zabierze Was w najdalsze zakątki globu – bez paszportu i bez wychodzenia z Białegostoku."
           ],
-          "soup": "Zupa ogórkowa",
-          "price": 37,
+          "soup": "🇵🇱 Polska: Zaczynamy od klasyki – ogórkowa na wędzonce oraz soczysty kotlet mielony z puree i groszkiem. 🇯🇵 Azja: Chrupiące kalmary z chili i cytrynowym aioli.",
+          "price": 47,
           "hasMenu": true
         },
         "wednesday": {
-          "lunch": [
-            "Kotlety mielone z puree ziemniaczanym",
-            "Kanapka Po Boy z krewetką",
-            "Arepas z pastą z fasoli"
-          ],
-          "soup": "Zupa ogórkowa",
-          "price": 37,
-          "hasMenu": true
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
         },
         "thursday": {
-          "lunch": [
-            "Kotlety mielone z puree ziemniaczanym",
-            "Kanapka Po Boy z krewetką",
-            "Arepas z pastą z fasoli"
-          ],
-          "soup": "Zupa ogórkowa",
-          "price": 37,
-          "hasMenu": true
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
         },
         "friday": {
-          "lunch": [
-            "Kotlety mielone z puree ziemniaczanym",
-            "Kanapka Po Boy z krewetką",
-            "Arepas z pastą z fasoli"
-          ],
-          "soup": "Zupa ogórkowa",
-          "price": 37,
-          "hasMenu": true
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
         }
       },
       "status": {
         "hasAnyLunch": true,
-        "isComplete": true
+        "isComplete": false
       }
     },
     {
@@ -548,10 +592,14 @@
       "lng": 23.1618111,
       "menus": {
         "monday": {
-          "lunch": [],
+          "lunch": [
+            "Nowy tydzień witamy ze smakiem w QuQułce. 🙂",
+            "Zapraszamy na lunch. 🍽️😃",
+            "🏠Aleja Piłsudskiego , Białystok"
+          ],
           "soup": null,
-          "price": null,
-          "hasMenu": false
+          "price": 25,
+          "hasMenu": true
         },
         "tuesday": {
           "lunch": [],
@@ -579,7 +627,7 @@
         }
       },
       "status": {
-        "hasAnyLunch": false,
+        "hasAnyLunch": true,
         "isComplete": false
       }
     },
@@ -595,10 +643,14 @@
       "lng": 23.1653593,
       "menus": {
         "monday": {
-          "lunch": [],
-          "soup": null,
-          "price": null,
-          "hasMenu": false
+          "lunch": [
+            "Nowy tydzień nowy lunch! Rozgrzej się w naszym przestronnym Raju w towarzystwie pysznej zimowej herbaty 🔥🌴",
+            "zupa krem z batatów z masłem orzechowym i chipsami z topinamburu",
+            "🌱DANIE WEGAŃSKIE"
+          ],
+          "soup": "🌱WEGAŃSKA",
+          "price": 12,
+          "hasMenu": true
         },
         "tuesday": {
           "lunch": [],
@@ -626,7 +678,7 @@
         }
       },
       "status": {
-        "hasAnyLunch": false,
+        "hasAnyLunch": true,
         "isComplete": false
       }
     },
@@ -748,10 +800,14 @@
       "lng": 23.157662,
       "menus": {
         "monday": {
-          "lunch": [],
-          "soup": null,
-          "price": null,
-          "hasMenu": false
+          "lunch": [
+            "BLUE MONDAY? Nie z nami! Wpadnij na lunch, zróbmy z tego poniedziałku coś pysznego!😎🥳",
+            "Caldo verde z chorizo i jarmużem",
+            "🍽️Danie główne:"
+          ],
+          "soup": "🥣",
+          "price": 12,
+          "hasMenu": true
         },
         "tuesday": {
           "lunch": [],
@@ -779,7 +835,7 @@
         }
       },
       "status": {
-        "hasAnyLunch": false,
+        "hasAnyLunch": true,
         "isComplete": false
       }
     },
@@ -889,39 +945,59 @@
       "lng": 17.0401578,
       "menus": {
         "monday": {
-          "lunch": [],
-          "soup": null,
-          "price": null,
-          "hasMenu": false
+          "lunch": [
+            "🍖Grillowana karkówka, pieczone ziemniaki i sałatka",
+            "🍅Gnocchi faszerowane pomidorami, mozzarellą, bazylią i sosem serowym",
+            "Zapraszamy!📍Plac Konstytycji 3 Maja 3"
+          ],
+          "soup": "🍲Hiszpańska z chorizo i mięsem mielonym",
+          "price": 12,
+          "hasMenu": true
         },
         "tuesday": {
-          "lunch": [],
-          "soup": null,
+          "lunch": [
+            "Lunch dnia WTOREK 💚",
+            "Curry bowl z warzywami",
+            "lub"
+          ],
+          "soup": "Tajska z mleczkiem kokosowym",
           "price": null,
-          "hasMenu": false
+          "hasMenu": true
         },
         "wednesday": {
-          "lunch": [],
+          "lunch": [
+            "Lunch dnia ŚRODA 💚",
+            "🫕 Krem pomidorowy z grzankami",
+            "🥘 Polędwiczka wieprzowa z kluskami śląskim i buraczkami"
+          ],
           "soup": null,
           "price": null,
-          "hasMenu": false
+          "hasMenu": true
         },
         "thursday": {
-          "lunch": [],
+          "lunch": [
+            "Lunch dnia CZWARTEK 😍",
+            "Krem z dyni",
+            "Sznycel z indyka z musem z kalafiora i sezonowymi warzywami"
+          ],
           "soup": null,
           "price": null,
-          "hasMenu": false
+          "hasMenu": true
         },
         "friday": {
-          "lunch": [],
-          "soup": null,
+          "lunch": [
+            "Lunch dnia PIĄTEK 💚",
+            "Fish burger z frytkami i sosem tatarskim",
+            "Makaron ryżowy na styl orientalny"
+          ],
+          "soup": "z soczewicy z cukinią i papryką",
           "price": null,
-          "hasMenu": false
+          "hasMenu": true
         }
       },
       "status": {
-        "hasAnyLunch": false,
-        "isComplete": false
+        "hasAnyLunch": true,
+        "isComplete": true
       }
     },
     {
@@ -937,47 +1013,58 @@
       "menus": {
         "monday": {
           "lunch": [
-            "Filet kurczaka panierowany w płatkach kukurydzianych, sos jogurtowy, puree ziemniaczane, sałatka z pomidorów",
-            "Gulasz z pampuchami, śmietana, natka pietruszki"
+            "Lunch menu poniedziałek .6",
+            "🫕 ZUPY:",
+            "Krem pomidorowy z mozzarellą i pesto"
           ],
-          "soup": "Ogórkowa vege",
-          "price": 28,
+          "soup": "🫕 DNIA:",
+          "price": 19.01,
           "hasMenu": true
         },
         "tuesday": {
           "lunch": [
-            "Gyros drobiowy, frytki, sos czosnkowy, surówka z kapusty pekińskiej",
-            "Karkówka panierowana, pieczone ziemniaki, majonez musztardowy, ogórek kiszony"
+            "Lunch menu wtorek .6",
+            "🫕 ZUPY:",
+            "Krem pomidorowy z mozzarellą i pesto"
           ],
-          "soup": "Pieczarkowa z kurczakiem",
-          "price": 28,
+          "soup": "🫕 DNIA:",
+          "price": 13.01,
           "hasMenu": true
         },
         "wednesday": {
           "lunch": [
-            "Kieszonka z kurczaka z suszonymi pomidorami i mozzarellą, puree ziemniaczane, sos serowy, surówka z białej kapusty",
-            "Bulgogi wieprzowe z ryżem, sezam"
+            "Lunch menu środa .6",
+            "🫕 ZUPY:",
+            "Krem pomidorowy z mozzarellą i pesto"
           ],
-          "soup": "Szpinakowa z wieprzowiną",
-          "price": 28,
+          "soup": "🫕 DNIA:",
+          "price": 14.01,
           "hasMenu": true
         },
         "thursday": {
-          "lunch": [],
-          "soup": null,
-          "price": null,
-          "hasMenu": false
+          "lunch": [
+            "Lunch menu czwartek .6",
+            "🫕 ZUPY:",
+            "Krem pomidorowy z mozzarellą i pesto"
+          ],
+          "soup": "🫕 DNIA:",
+          "price": 15.01,
+          "hasMenu": true
         },
         "friday": {
-          "lunch": [],
-          "soup": null,
-          "price": null,
-          "hasMenu": false
+          "lunch": [
+            "Lunch menu piątek .6",
+            "🫕 ZUPY:",
+            "Krem pomidorowy z mozzarellą i pesto"
+          ],
+          "soup": "🫕 DNIA:",
+          "price": 16.01,
+          "hasMenu": true
         }
       },
       "status": {
         "hasAnyLunch": true,
-        "isComplete": false
+        "isComplete": true
       }
     },
     {
@@ -1086,26 +1173,91 @@
       "lng": 17.0240703,
       "menus": {
         "monday": {
-          "lunch": [],
-          "soup": null,
-          "price": null,
-          "hasMenu": false
+          "lunch": [
+            "Lunch menu poniedziałek .6",
+            "🫕 ZUPY:",
+            "Krem pomidorowy z mozzarellą i pesto"
+          ],
+          "soup": "🫕 DNIA:",
+          "price": 19.01,
+          "hasMenu": true
         },
         "tuesday": {
-          "lunch": [],
-          "soup": null,
-          "price": null,
-          "hasMenu": false
+          "lunch": [
+            "Lunch menu wtorek .6",
+            "🫕 ZUPY:",
+            "Krem pomidorowy z mozzarellą i pesto"
+          ],
+          "soup": "🫕 DNIA:",
+          "price": 13.01,
+          "hasMenu": true
         },
         "wednesday": {
           "lunch": [
-            "Filet panierowany w płatkach kukurydzianych",
-            "Lasagne wołowa",
-            "Dwie bułeczki bao z łososiem"
+            "Lunch menu Środa .6",
+            "🫕 ZUPY:",
+            "Krem pomidorowy z mozzarellą i pesto"
           ],
-          "soup": "Krem pomidorowy z mozzarellą i pesto",
-          "price": 28,
+          "soup": "🫕 DNIA:",
+          "price": 14.01,
           "hasMenu": true
+        },
+        "thursday": {
+          "lunch": [
+            "Lunch menu czwartek .6",
+            "🫕 ZUPY:",
+            "Krem pomidorowy z mozzarellą i pesto"
+          ],
+          "soup": "🫕 DNIA:",
+          "price": 15.01,
+          "hasMenu": true
+        },
+        "friday": {
+          "lunch": [
+            "Lunch menu piątek .6",
+            "🫕 ZUPY:",
+            "Krem pomidorowy z mozzarellą i pesto"
+          ],
+          "soup": "🫕 DNIA:",
+          "price": 16.01,
+          "hasMenu": true
+        }
+      },
+      "status": {
+        "hasAnyLunch": true,
+        "isComplete": true
+      }
+    },
+    {
+      "id": "folgujemy",
+      "name": "Folgujemy",
+      "city": "Wrocław",
+      "address": "Kniaziewicza 16",
+      "phone": "537 552 023",
+      "facebookUrl": "https://www.facebook.com/folgujemy/",
+      "isActive": true,
+      "lat": 51.1018885,
+      "lng": 17.0423791,
+      "menus": {
+        "monday": {
+          "lunch": [],
+          "soup": "May be an image of text that says 'Lunch MENU PONIEDZIAŁEK-PIĄTEK -/zestawic ŚRODA pomidorowa/ MIĘSNY KETO/TYGODNIA ORZECHOWE/ jajoczny graszkiem PORZECZKA/ ziemmaczane/ marchewkaz miclony LEMONIADĘ, puret ziemniaczane KETO domowy melony punee dyniowe PON",
+          "price": 19,
+          "hasMenu": false
+        },
+        "tuesday": {
+          "lunch": [
+            "May be an image of text May be an image of poached egg and chicken sandwich May be an image of poached egg May be an image of croquette May be an image of pasta"
+          ],
+          "soup": "Rozpiska lunchowa na ten tydzień - żeby każdy miał pod ręką. 😇 zapraszamy na codziennie inny lunch wege, mięsny i keto. W zestawie z zupą lub solo. ☺️",
+          "price": null,
+          "hasMenu": true
+        },
+        "wednesday": {
+          "lunch": [],
+          "soup": null,
+          "price": null,
+          "hasMenu": false
         },
         "thursday": {
           "lunch": [],
@@ -1122,53 +1274,6 @@
       },
       "status": {
         "hasAnyLunch": true,
-        "isComplete": false
-      }
-    },
-    {
-      "id": "folgujemy",
-      "name": "Folgujemy",
-      "city": "Wrocław",
-      "address": "Kniaziewicza 16",
-      "phone": "537 552 023",
-      "facebookUrl": "https://www.facebook.com/folgujemy/",
-      "isActive": true,
-      "lat": 51.1018885,
-      "lng": 17.0423791,
-      "menus": {
-        "monday": {
-          "lunch": [],
-          "soup": null,
-          "price": null,
-          "hasMenu": false
-        },
-        "tuesday": {
-          "lunch": [],
-          "soup": null,
-          "price": null,
-          "hasMenu": false
-        },
-        "wednesday": {
-          "lunch": [],
-          "soup": null,
-          "price": null,
-          "hasMenu": false
-        },
-        "thursday": {
-          "lunch": [],
-          "soup": null,
-          "price": null,
-          "hasMenu": false
-        },
-        "friday": {
-          "lunch": [],
-          "soup": null,
-          "price": null,
-          "hasMenu": false
-        }
-      },
-      "status": {
-        "hasAnyLunch": false,
         "isComplete": false
       }
     },
@@ -1232,29 +1337,95 @@
       "menus": {
         "monday": {
           "lunch": [
-            "Filet z kurczaka zapiekany z pieczarkami i serem",
-            "Pierogi ruskie",
-            "Penne z kurczakiem i szpinakiem"
+            "MAMINE SMAKI zapraszają na dzisiejszy zestaw dnia 🥰",
+            "👉DANIE DNIA-filet z kurczaka zapiekany z pieczarkami i serem-.",
+            "W zestawie kupisz taniej-🥳🥳🥳"
           ],
-          "soup": "Rosół",
+          "soup": "👉DNIA-rosół - 🥣😋",
           "price": 34,
           "hasMenu": true
         },
         "tuesday": {
           "lunch": [
-            "Schab z masłem czosnkowym",
-            "Klasyczny schabowy",
-            "Filet z kurczaka zapiekany z pomidorem i serem"
+            "MAMINE SMAKI zapraszają na dzisiejszy zestaw dnia 🥰",
+            "👉DANIE DNIA-schab z masłem czosnkowym -.",
+            "W zestawie kupisz taniej-🥳🥳🥳"
           ],
-          "soup": "Grochówka",
+          "soup": "👉DNIA-grochówka - 🥣😋",
           "price": 34,
           "hasMenu": true
         },
         "wednesday": {
+          "lunch": [
+            "MAMINE SMAKI zapraszają na dzisiejszy zestaw dnia 🥰",
+            "👉DANIE DNIA-filet z kurczaka w słoneczniku -.",
+            "W zestawie kupisz taniej-🥳🥳🥳"
+          ],
+          "soup": "👉DNIA-krupnik - 🥣😋",
+          "price": 34,
+          "hasMenu": true
+        },
+        "thursday": {
+          "lunch": [
+            "MAMINE SMAKI zapraszają na dzisiejszy zestaw dnia 🥰",
+            "👉DANIE DNIA-filet z kurczaka po parysku -.",
+            "W zestawie kupisz taniej-🥳🥳🥳"
+          ],
+          "soup": "👉DNIA-pomidorowa z ryżem - 🥣😋",
+          "price": 34,
+          "hasMenu": true
+        },
+        "friday": {
+          "lunch": [
+            "MAMINE SMAKI zapraszają na dzisiejszy zestaw dnia 🥰",
+            "👉DANIE DNIA-panierowany morszczuk-.",
+            "W zestawie kupisz taniej-🥳🥳🥳"
+          ],
+          "soup": "👉DNIA-kapuśniak ze słodkiej kapusty - 🥣😋",
+          "price": 34,
+          "hasMenu": true
+        }
+      },
+      "status": {
+        "hasAnyLunch": true,
+        "isComplete": true
+      }
+    },
+    {
+      "id": "mangomaman",
+      "name": "Mango Mama Nadodrze",
+      "city": "Wrocław",
+      "address": "Jedności Narodowej 77",
+      "phone": "531 089 532",
+      "facebookUrl": "https://www.facebook.com/mangomamafood/",
+      "isActive": true,
+      "lat": 51.1208403,
+      "lng": 17.0416346,
+      "menus": {
+        "monday": {
           "lunch": [],
           "soup": null,
           "price": null,
           "hasMenu": false
+        },
+        "tuesday": {
+          "lunch": [
+            "Czas na lunch w Mango Mama! 🍛✨",
+            "Od poniedziałku do piątku między :a :czeka na Ciebie lunch w cenie 💛",
+            "🌶️ Rainbow Jalfrezi"
+          ],
+          "soup": null,
+          "price": 11,
+          "hasMenu": true
+        },
+        "wednesday": {
+          "lunch": [
+            "Zapraszamy na lunch! ❤️",
+            "No photo description available."
+          ],
+          "soup": null,
+          "price": null,
+          "hasMenu": true
         },
         "thursday": {
           "lunch": [],
@@ -1272,73 +1443,6 @@
       "status": {
         "hasAnyLunch": true,
         "isComplete": false
-      }
-    },
-    {
-      "id": "mangomaman",
-      "name": "Mango Mama Nadodrze",
-      "city": "Wrocław",
-      "address": "Jedności Narodowej 77",
-      "phone": "531 089 532",
-      "facebookUrl": "https://www.facebook.com/mangomamafood/",
-      "isActive": true,
-      "lat": 51.1208403,
-      "lng": 17.0416346,
-      "menus": {
-        "monday": {
-          "lunch": [
-            "Rainbow Jalfrezi",
-            "Biryani",
-            "Kofta"
-          ],
-          "soup": "Tom Yum",
-          "price": 27.95,
-          "hasMenu": true
-        },
-        "tuesday": {
-          "lunch": [
-            "Rainbow Jalfrezi",
-            "Biryani",
-            "Kofta"
-          ],
-          "soup": "Tom Yum",
-          "price": 27.95,
-          "hasMenu": true
-        },
-        "wednesday": {
-          "lunch": [
-            "Rainbow Jalfrezi",
-            "Biryani",
-            "Kofta"
-          ],
-          "soup": "Tom Yum",
-          "price": 27.95,
-          "hasMenu": true
-        },
-        "thursday": {
-          "lunch": [
-            "Rainbow Jalfrezi",
-            "Biryani",
-            "Kofta"
-          ],
-          "soup": "Tom Yum",
-          "price": 27.95,
-          "hasMenu": true
-        },
-        "friday": {
-          "lunch": [
-            "Rainbow Jalfrezi",
-            "Biryani",
-            "Kofta"
-          ],
-          "soup": "Tom Yum",
-          "price": 27.95,
-          "hasMenu": true
-        }
-      },
-      "status": {
-        "hasAnyLunch": true,
-        "isComplete": true
       }
     },
     {
@@ -1448,8 +1552,8 @@
       "menus": {
         "monday": {
           "lunch": [],
-          "soup": null,
-          "price": null,
+          "soup": "No photo description available. No photo description available. May be an image of steak No photo description available. May be an image of text that says 'lunch lunchmenu menu PONIEDZIAŁEK ΡΟΝΕΟΣΙΑΣEK-PΪΆTEK0-:-PIĄTEK :- :+ pizza makaron zupa makaron des",
+          "price": 16,
           "hasMenu": false
         },
         "tuesday": {
@@ -1471,14 +1575,18 @@
           "hasMenu": false
         },
         "friday": {
-          "lunch": [],
-          "soup": null,
-          "price": null,
-          "hasMenu": false
+          "lunch": [
+            "🍰 DESER DNIA 🍰",
+            "Nowość w menu 🍽️",
+            "Beza przekładana kremem z mascarpone, borówki w środku, do tego sos z owoców leśnych obok 🍓"
+          ],
+          "soup": "May be an image of pizza and text that says 'e4m mAA EEnA lunch PIATEK makaro makaron deser menu :: +pizz PONIEDZIAKEK. plza zupa pizza Lemoniada makar lub Wino- ZUPY Zupa dzis sery dnia *spytaj. MAK ARON Pappardelle gorgonzola spinaci smietanka szpinak, ",
+          "price": 15,
+          "hasMenu": true
         }
       },
       "status": {
-        "hasAnyLunch": false,
+        "hasAnyLunch": true,
         "isComplete": false
       }
     },
@@ -1512,10 +1620,14 @@
           "hasMenu": false
         },
         "thursday": {
-          "lunch": [],
-          "soup": null,
-          "price": null,
-          "hasMenu": false
+          "lunch": [
+            "W grudniu widzimyyy się codziennie od :🥂✨",
+            "Przez cały miesiąc Pod Papugami jesteśmy dla Was czynni od godziny :– idealnie na niespieszny obiad, kieliszek wina czy świąteczne spotkania z bliskimi. 🎄🍷",
+            "W tygodniu czekają na Was także zestawy lunchowe:"
+          ],
+          "soup": "🥣 + 🍽️ danie główne w cenie",
+          "price": 13,
+          "hasMenu": true
         },
         "friday": {
           "lunch": [],
@@ -1525,7 +1637,7 @@
         }
       },
       "status": {
-        "hasAnyLunch": false,
+        "hasAnyLunch": true,
         "isComplete": false
       }
     },
@@ -1588,10 +1700,14 @@
       "lng": 17.0316186,
       "menus": {
         "monday": {
-          "lunch": [],
+          "lunch": [
+            "Rozpiska lunchy na ten tydzień!",
+            "Wpadajcie i zajadajcie😋",
+            "#restauracjawrocław #lunchdnia #pomyslnaobiad #conaobiad #restauracja #obiaddomowy #kuchniapolska #wroclawfood #jedzeniewroclaw #wroclawcity #food #lunch #meal"
+          ],
           "soup": null,
-          "price": null,
-          "hasMenu": false
+          "price": 33.9,
+          "hasMenu": true
         },
         "tuesday": {
           "lunch": [],
@@ -1619,7 +1735,7 @@
         }
       },
       "status": {
-        "hasAnyLunch": false,
+        "hasAnyLunch": true,
         "isComplete": false
       }
     },
@@ -1636,47 +1752,52 @@
       "menus": {
         "monday": {
           "lunch": [
-            "Palak",
-            "Kadai"
+            "stycznia",
+            "📍Thali na Ruskiej: Tikka Masala",
+            "📍Thali na Jedności: Lokal nieczynny - dostawy realizujemy z Placu Grunwaldzkiego"
           ],
           "soup": null,
-          "price": 29,
+          "price": 19,
           "hasMenu": true
         },
         "tuesday": {
           "lunch": [
-            "Butter Masala"
+            "stycznia",
+            "📍Thali na Ruskiej: Kadai",
+            "📍Thali na Jedności: Butter Masala"
           ],
           "soup": null,
-          "price": 29,
+          "price": 20,
           "hasMenu": true
         },
         "wednesday": {
           "lunch": [
-            "Jalfrezi",
-            "Tikka Masala"
+            "stycznia",
+            "📍Thali na Ruskiej: Butter Masala",
+            "📍Thali na Jedności: Tikka Masala"
           ],
           "soup": null,
-          "price": 29,
+          "price": 21,
           "hasMenu": true
         },
         "thursday": {
           "lunch": [
-            "Tikka Masala",
-            "Lababdar"
+            "stycznia",
+            "📍Thali na Ruskiej: Palak",
+            "📍Thali na Jedności: Laziz"
           ],
           "soup": null,
-          "price": 29,
+          "price": 22,
           "hasMenu": true
         },
         "friday": {
           "lunch": [
-            "Methi",
-            "Kadai",
-            "Palak"
+            "stycznia",
+            "📍Thali na Ruskiej: Lababdar",
+            "📍Thali na Jedności: Jalfrezi"
           ],
           "soup": null,
-          "price": 29,
+          "price": 23,
           "hasMenu": true
         }
       },
@@ -1750,10 +1871,14 @@
           "hasMenu": false
         },
         "tuesday": {
-          "lunch": [],
+          "lunch": [
+            "🍜 Lunch w Yemsetu",
+            "Między spotkaniami, w przerwie od pracy albo po prostu z głodu.",
+            "Od :do :czeka na Was zestaw, który robi robotę:"
+          ],
           "soup": null,
-          "price": null,
-          "hasMenu": false
+          "price": 12,
+          "hasMenu": true
         },
         "wednesday": {
           "lunch": [],
@@ -1775,7 +1900,7 @@
         }
       },
       "status": {
-        "hasAnyLunch": false,
+        "hasAnyLunch": true,
         "isComplete": false
       }
     }
