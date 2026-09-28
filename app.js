@@ -1,11 +1,11 @@
 (() => {
   const DAY_KEYS = ["monday", "tuesday", "wednesday", "thursday", "friday"];
   const DAY_LABELS = {
-    monday: "Poniedzialek",
+    monday: "Poniedziałek",
     tuesday: "Wtorek",
-    wednesday: "Sroda",
+    wednesday: "Środa",
     thursday: "Czwartek",
-    friday: "Piatek",
+    friday: "Piątek",
   };
   const DAY_SHORT = {
     monday: "Pon",
@@ -219,7 +219,10 @@
       attributionControl: true,
     }).setView([52.0, 19.0], 6);
 
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+    // Injected at deployment; this key is still visible in browser tile requests.
+    const mapKey = window.CONALUNCH_CONFIG?.cartoBasemapApiKey;
+    if (!mapKey) throw new Error("Brak konfiguracji mapy (config.js).");
+    L.tileLayer(`https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?key=${encodeURIComponent(mapKey)}`, {
       maxZoom: 19,
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
       subdomains: "abcd",
@@ -243,9 +246,8 @@
   }
 
   function renderMeta() {
-    const meta = state.dataset.meta || {};
     const dayLabel = DAY_LABELS[state.dayKey] || state.dayKey;
-    ui.metaInfo.textContent = `${dayLabel} · tydzien ${meta.week || "?"}/${meta.year || "?"}`;
+    ui.metaInfo.textContent = `${dayLabel} — demo · dane archiwalne`;
   }
 
   function renderWeekendNote() {

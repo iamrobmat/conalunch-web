@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CoNaLunch - lunch mapa</title>
-    <meta name="description" content="Lunchowe menu restauracji: Bialystok i Wroclaw" />
+    <meta name="description" content="CoNaLunch — demo zatrzymanego projektu biznesowego. Mapa lunchów w Białymstoku i Wrocławiu z danymi archiwalnymi." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -16,7 +16,7 @@
       <div class="topbar-left">
         <span class="logo">CoNaLunch</span>
         <span class="topbar-sep"></span>
-        <span class="meta" id="metaInfo">Ladowanie...</span>
+        <span class="meta" id="metaInfo" title="Demo zatrzymanego projektu biznesowego. Menu i ceny są archiwalne.">Demo · dane archiwalne</span>
       </div>
       <div class="topbar-right">
         <div id="cityDropdown" class="city-dropdown">
@@ -74,6 +74,7 @@
     </template>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="./config.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>
